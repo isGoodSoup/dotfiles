@@ -27,7 +27,7 @@ function p() {
 		if [[ $2 == 0 ]]; then
 			:
 		else
-			yazi $1
+			nvim $1
 		fi
 		echo "  Python script was created."
 	else
@@ -41,8 +41,13 @@ function bstamp() {
 	echo "  Bedtime recorded: $(date +"%H:%M")"
 }
 
-function qrr() {
-	sudo reboot
+function sort_aliases() {
+    local alias_file=~/.bashrc_alias.bash
+    (
+        grep -v '^alias ' "$alias_file"  # Non-alias lines
+        grep '^alias ' "$alias_file" | sort  # Sorted aliases
+    ) > "$alias_file.tmp" && mv "$alias_file.tmp" "$alias_file"
+    echo "Aliases sorted!"
 }
 
 function q() {
