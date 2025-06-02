@@ -31,7 +31,7 @@ function p() {
 		fi
 		echo "  Python script was created."
 	else
-		if [[ $2 == '-e' || '--edit' ]]; then
+		if [[ $2 == '-e' || $2 == '--edit' ]]; then
 			nvim $1
 		else
 			python "$1"
@@ -54,13 +54,14 @@ function bstamp() {
 function dot() {
 	nvim $HOME/dotfiles/$1
 }
-
 function f() {
-	if [[ ! -f $1 ]]; then
-		xdg-open $1
-	else
-		firefox
-	fi
+    if [[ -n "$1" && ! -f "$1" ]]; then
+	url=$1
+	http='https://'
+        (nohup xdg-open "$http$1" >/dev/null 2>&1 & disown)
+    else
+        (nohup firefox >/dev/null 2>&1 & disown)
+    fi
 }
 
 function tm() {
