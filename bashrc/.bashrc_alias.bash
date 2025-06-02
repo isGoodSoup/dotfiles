@@ -67,3 +67,4 @@ alias hyprconf='nvim dotfiles/hypr/.config/hypr/hyprland.conf' # Edit hyprland.c
 alias waybar-reset='pkill waybar && (waybar & disown)'
 alias kittyconf='dot kitty/.config/kitty/kitty.conf'
 alias waybar-off='pkill waybar'
+alias gitpush='sh /home/diego/gitpush.sh'
