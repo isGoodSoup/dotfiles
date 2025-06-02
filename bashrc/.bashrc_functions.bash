@@ -51,6 +51,14 @@ function dot() {
 	nvim $HOME/dotfiles/$1
 }
 
+function fox() {
+	if [[ ! -f $1 ]]; then
+		xdg-open $1
+	else
+		firefox
+	fi
+}
+
 function tm() {
 	echo "Current Time => $(date +"%H:%M")"
 }
