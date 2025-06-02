@@ -51,7 +51,7 @@ function dot() {
 	nvim $HOME/dotfiles/$1
 }
 
-function fox() {
+function f() {
 	if [[ ! -f $1 ]]; then
 		xdg-open $1
 	else
