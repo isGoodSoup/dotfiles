@@ -31,7 +31,11 @@ function p() {
 		fi
 		echo "  Python script was created."
 	else
-		python "$1"
+		if [[ $2 == '-e' || '--edit' ]]; then
+			nvim $1
+		else
+			python "$1"
+		fi
 	fi
 	cd $HOME
 }
