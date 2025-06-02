@@ -59,7 +59,7 @@ function fox() {
     if [[ -n "$1" && ! -f "$1" ]]; then
 	url=$1
 	http='https://'
-        (nohup xdg-open "$http$1" >/dev/null 2>&1 & disown)
+        (nohup firefox "$http$1" >/dev/null 2>&1 & disown)
     else
         (nohup firefox >/dev/null 2>&1 & disown)
     fi
