@@ -13,15 +13,15 @@ function y() {
 }
 
 function hfind() {
-	history | grep -v "hfind" | awk "{cmd=\$0; sub(/^[ ]*[0-9]+[ ]+/, \"\", cmd)} !seen[cmd]++" | grep
+	history | grep -v "hfind" | grep "$1" | awk '!seen[substr($0, index($0,$2))]++'
 }
 
-function lsblk() {
+function lsb() {
 	lsblk -Ax name -o NAME,MAJ:MIN,ROTA,SIZE,TYPE,FSTYPE,MOUNTPOINTS
 }
 
 function p() {
-	cd $HOME/python_course/ || return 1
+	cd $HOME/dotfiles/python/python_course/ || return 1
 	if [[ ! -f $1 ]]; then
 		echo "#!/usr/bin/python" > $1
 		if [[ $2 == 0 ]]; then
@@ -36,20 +36,32 @@ function p() {
 	cd $HOME
 }
 
+function bashf() {
+	cd $HOME/dotfiles/
+	nvim bashrc/.bashrc_functions.bash
+	cd $HOME
+}
+
 function bstamp() {
 	echo "[$(date +"%Y-%m-%d")] $(date +"%H:%M")" >> $HOME/.bedtime.txt
 	echo "  Bedtime recorded: $(date +"%H:%M")"
 }
 
-function sort_aliases() {
-    local alias_file=~/.bashrc_alias.bash
-    (
-        grep -v '^alias ' "$alias_file"  # Non-alias lines
-        grep '^alias ' "$alias_file" | sort  # Sorted aliases
-    ) > "$alias_file.tmp" && mv "$alias_file.tmp" "$alias_file"
-    echo "Aliases sorted!"
+function dot() {
+	nvim $HOME/dotfiles/$1
+}
+
+function tm() {
+	echo "Current Time => $(date +"%H:%M")"
+}
+
+function nal() {
+	cd $HOME/dotfiles/bashrc/
+	echo "alias $1='$2'" >> .bashrc_alias.bash
+	cd $HOME
 }
 
 function q() {
 	exit
 }
+

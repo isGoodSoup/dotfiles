@@ -2,10 +2,9 @@
 # ~/.bashrc_alias.bash
 #
 #
-export PAN='/mnt/pandora'
-export DOTS='$HOME/.config/'
-export PICS='/mnt/pandora/pics'
-export MOVS='/mnt/pandora/movs'
+export DOTS='$HOME/dotfiles/'
+export PICS='/mnt/odyssey/pics'
+export MOVS='/mnt/odyssey/movs'
 export PYTH='$HOME/python_course/'
 
 alias super='sudo' # Replace sudo with super.
@@ -24,14 +23,13 @@ alias d5='cd ../../../../..'
 alias d6='cd ../../../../../..'  
 alias clrh='history -c' # CAUTION: Clear history.
 alias clip='xclip -sel c <' # Copy the entire content of a file.
-alias pan='z $PAN && yazi' # Open the $PAN directory.
-alias dots='z $DOTS && yazi' # Open the $DOTS directory.
-alias pics='z $PICS && yazi' # Open the $PICS directory.
-alias ebash='nvim ~/.bashrc' # Edit .bashrc file.
-alias rbash='source ~/.bashrc && echo "rbash: ~/.bashrc was sourced."' # Reload .bashrc file.
+alias dots='y $DOTS' # Open the $DOTS directory.
+alias pics='y $PICS' # Open the $PICS directory.
+alias ebash='nvim ~/dotfiles/bashrc/.bashrc' # Edit .bashrc file.
+alias rbash='source ~/dotfiles/bashrc/.bashrc && echo "rbash: .bashrc was sourced."' # Reload .bashrc file.
 alias cbash='cat ~/.bashrc' # Cat .bashrc file.
 alias bfind='cat ~/.bashrc | grep' # Find in the .bashrc file.
-alias edbr='nvim ~/.bashrc && rbash' # Edit & refresh .bashrc file.
+alias edbr='nvim ~/dotfiles/bashrc/.bashrc && rbash' # Edit & refresh .bashrc file.
 alias sp='sudo pacman' # Fast pacman.
 alias spi='sudo pacman -S' # Install pacman package.
 alias spr='sudo pacman -Rns' # Delete pacman package and dependencies.
@@ -60,8 +58,12 @@ alias clr='clear' # Faster clear.
 alias poly='(polybar & disown)' # Enable polybar.
 alias polyoff='(pkill polybar)' # Disable polybar.
 alias rpoly='(pkill polybar && polybar)' # Reset polybar.
-alias i3conf='sudo vim $DOTS/i3/config' # Open i3 config.
-alias kittyconf='vim $DOTS/kitty/kitty.conf' # Open kitty config.
-alias picom-start='picom --config $DOTS/picom/picom.conf -b' # Start picom.
+alias i3conf='nvim $DOTS/i3/.config/i3/config' # Open i3 config.
+alias picom-start='picom --config $DOTS/picom/.config/picom/picom.conf -b' # Start picom.
 alias pyth='y $PYTH'
 alias unstow='stow --delete'
+alias waybar='(waybar & disown)' # Launch waybar
+alias hyprconf='nvim dotfiles/hypr/.config/hypr/hyprland.conf' # Edit hyprland.conf
+alias waybar-reset='pkill waybar && (waybar & disown)'
+alias kittyconf='dot kitty/.config/kitty/kitty.conf'
+alias waybar-off='pkill waybar'

@@ -18,9 +18,9 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    // border-color: @blue;
+    border-color: @blue;
     border-radius: 16;
-    // border: 5px solid;
+    border: 4px solid;
     background-color: @bg-col;
 }
 
@@ -60,7 +60,7 @@ entry {
 listview {
     padding: 15px 0px 0px 0px;
     columns: 1;
-    lines: 4;
+    lines: 1;
     background-color: @bg-col;
 }
 
@@ -81,7 +81,7 @@ element-icon {
 }
 
 element selected.normal {
-    background-color:  @blue;
+    background-color: @blue;
     border-radius: 10px;
     text-color: @bg-col;
 }
