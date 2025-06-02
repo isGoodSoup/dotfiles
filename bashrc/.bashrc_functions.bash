@@ -65,16 +65,6 @@ function fox() {
     fi
 }
 
-function google() {
-    if [[ -n "$1" && ! -f "$1" ]]; then
-	url=$1
-	http='https://'
-        (nohup chrome "$http$1" >/dev/null 2>&1 & disown)
-    else
-        (nohup chrome >/dev/null 2>&1 & disown)
-    fi
-}
-
 function tm() {
 	echo "Current Time => $(date +"%H:%M")"
 }
