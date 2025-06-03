@@ -1,4 +1,5 @@
 alias fishes="nvim ~/dotfiles/fish/.config/fish/fish_alias.fish"
+alias fishconf="nvim ~/dotfiles/fish/.config/fish/config.fish"
 
 export DOTS='~/dotfiles/'
 export PYTH='~/dotfiles/python/python_course/'
