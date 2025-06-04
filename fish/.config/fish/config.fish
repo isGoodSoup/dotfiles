@@ -65,6 +65,29 @@ function mkcd
 	end
 end
 
+function dot
+	cd ~/dotfiles/
+	git add "$argv[1]"
+	git commit -m "$argv[2]"
+	git push -u main origin
+	cd
+end
+
+function fox
+	set -f url "$argv[1]"
+	if test -n "$url"
+		#echo "URL detected"
+		begin 
+			nohup firefox "$url" & disown
+		end &> /dev/null
+	else
+		#echo "URL not detected, opening browser"
+		begin 
+			nohup firefox & disown
+		end &> /dev/null
+	end
+end
+
 function q 
 	exit
 end
