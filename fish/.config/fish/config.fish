@@ -44,6 +44,7 @@ function p
             nvim "$argv[1]"
 	else if test "$argv[2]" = "-d"
 	    rm -rf "$argv[1]"
+	    echo "  Script was successfully deleted"
 	else
             echo "Unknown second argument: $argv[2]"
             return 1
@@ -55,6 +56,13 @@ end
 function bstamp
 	echo "[$(date +"%Y-%m-%d")] $(date +"%H:%M")" >> ~/.bedtime.txt
 	echo "  Bedtime recorded: $(date +"%H:%M")"
+end
+
+function mkcd
+	mkdir $argv[1] -p
+	if test -d "$argv[1]"
+		cd $argv[1]
+	end
 end
 
 function q 
