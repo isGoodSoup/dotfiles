@@ -152,6 +152,9 @@ vim.o.splitbelow = true
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+-- Set 80 character limit
+vim.opt.columns = 80
+
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
 
