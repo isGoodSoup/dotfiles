@@ -1,9 +1,9 @@
 {
     "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
+    "position": "bottom", // Waybar position (top|bottom|left|right)
     // "width": 1920, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
+    // "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/music"],
     "modules-right": ["pulseaudio", "clock", "custom/lock", "custom/power"],
     "hyprland/workspaces": {
