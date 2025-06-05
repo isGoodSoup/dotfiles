@@ -3,6 +3,8 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 25,
     // "width": 1920, // Waybar width
+    "margin-top": 5,
+    "margin-bottom": 5,
     // Choose the order of the modules
     // "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/music"],
