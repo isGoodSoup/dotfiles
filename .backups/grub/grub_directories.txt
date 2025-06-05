@@ -1,0 +1,2 @@
+grub.cfg --> /boot/grub/grub.cfg
+grub 	 --> /etc/default/grub
