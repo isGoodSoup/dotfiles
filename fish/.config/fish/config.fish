@@ -73,6 +73,11 @@ function dot
 	cd
 end
 
+function dotstat
+	cd ~/dotfiles/
+	git status
+	cd
+end
 function fox
 	set -f url "$argv[1]"
 	if test -n "$url"
