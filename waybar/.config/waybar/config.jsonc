@@ -10,15 +10,13 @@
   "height": 40,
   "modules-left": [
     "cpu",
-    "memory",
     "disk"
   ],
   "modules-center": [
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "hyprland/language",
-    "network",
+    // "hyprland/language",
     "pulseaudio",
     "clock",
     "separator",

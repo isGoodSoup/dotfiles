@@ -109,7 +109,7 @@ button:hover {
 #workspaces {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 12 0 12;
     margin-left: 4px;
@@ -129,7 +129,7 @@ button:hover {
 #clock {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -190,7 +190,7 @@ label:focus {
 #cpu {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -200,7 +200,7 @@ label:focus {
 #memory {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -210,7 +210,7 @@ label:focus {
 #disk {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -224,7 +224,7 @@ label:focus {
 #network {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -234,7 +234,7 @@ label:focus {
 #network.disconnected {
     background-color: @red;
     border-radius: 16px;
-    border: 2px solid @text;
+    /* border: 2px solid @text; */
     color: @base;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -244,7 +244,7 @@ label:focus {
 #pulseaudio {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -254,7 +254,7 @@ label:focus {
 #pulseaudio.muted {
     background-color: @red;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @base;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -273,8 +273,8 @@ label:focus {
 #custom-media {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @green;
-    color: @text;
+    /* border: 2px solid @green; */
+    color: @green;
     padding: 0 10 0 10;
     margin-left: 4px;
     margin-right: 4px;
@@ -283,8 +283,8 @@ label:focus {
 #custom-media.custom-spotify {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @green;
-    color: @text;
+    /* border: 2px solid @green; */
+    color: @green;
     padding: 0 10 0 10;
     margin-left: 4px;
     margin-right: 4px;
@@ -344,7 +344,7 @@ label:focus {
 #language {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -354,7 +354,7 @@ label:focus {
 #keyboard-state {
     background-color: @base;
     border-radius: 16px;
-    border: 2px solid @blue;
+    /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
