@@ -4,10 +4,10 @@
   "exlusive": "true",
   "passthrough": "true",
   "gtk-layer-shell": "true",
-  "margin-top": 10,
+  "margin-top": 14,
   "margin-left": 10,
   "margin-right": 10,
-  "height": 40,
+  "height": 38,
   "modules-left": [
     // "memory",
     // "cpu",
