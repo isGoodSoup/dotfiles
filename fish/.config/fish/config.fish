@@ -66,6 +66,11 @@ function mkcd
 	end
 end
 
+function lscd
+	ls -lahc --color=auto $argv[1]
+	cd $argv
+end
+
 function dot
 	cd ~/dotfiles/
 	git add "$argv[1]"
