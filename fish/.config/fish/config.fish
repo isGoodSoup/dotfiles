@@ -36,18 +36,18 @@ function p
         if not test "$argv[2]" = "0"
             nvim "$argv[1]"
         end
-        echo " Created new Python script: $argv[1]"
+        echo "  Created new Python script: $argv[1]"
     else
         if test -z "$argv[2]"
             python "$argv[1]"
         else if test "$argv[2]" = "-e"
             nvim "$argv[1]"
-	    echo " Request to edit: $argv[1]"
+	    echo "  Request to edit: $argv[1]"
 	else if test "$argv[2]" = "-d"
 	    rm -rf "$argv[1]"
-	    echo " Script was successfully deleted"
+	    echo "  Script was successfully deleted"
 	else
-            echo " Unknown second argument: $argv[2]"
+            echo "  Unknown second argument: $argv[2]"
             return 1
         end
     end
