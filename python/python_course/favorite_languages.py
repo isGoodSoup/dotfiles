@@ -12,5 +12,5 @@ for name, language in favorite_languages.items():
 
 print('')
 
-for name in favorite_languages.keys():
-    print(f"{name.title()}")
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll")
