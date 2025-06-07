@@ -99,6 +99,12 @@ function fox
 	end
 end
 
+function bye
+	cowsay 'Goodbye'
+	sleep 4
+	sudo shutdown now
+end
+
 function q 
 	exit
 end
