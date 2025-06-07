@@ -101,7 +101,7 @@ end
 
 function bye
 	cowsay 'Goodbye'
-	sleep 4
+	sleep 1
 	sudo shutdown now
 end
 
