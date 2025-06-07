@@ -9,7 +9,8 @@
   "margin-right": 10,
   "height": 40,
   "modules-left": [
-    "cpu",
+    // "memory",
+    // "cpu",
     "disk"
   ],
   "modules-center": [
