@@ -9,7 +9,7 @@
 window#waybar {
     background-color: transparent;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-    color: #ffffff;
+    color: @text;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -28,7 +28,7 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+    background-color: @base;
 }
 
 window#waybar.chromium {
@@ -52,26 +52,31 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: @blue;
+    color: @base;
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 6px;
     background-color: transparent;
-    color: #ffffff;
+    color: @text;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: transparent;
 }
 
 #workspaces button.focused {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    /* box-shadow: inset 0 -3px #ffffff; */
 }
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
+}
+
+#workspaces button.active {
+    color: @blue;
 }
 
 #mode {
@@ -102,7 +107,13 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 12 0 12;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -116,7 +127,13 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #battery {
@@ -171,16 +188,33 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #disk {
-    background-color: #964B00;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #backlight {
@@ -188,21 +222,43 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background-color: @red;
+    border-radius: 16px;
+    border: 2px solid @text;
+    color: @base;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: @red;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @base;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #wireplumber {
@@ -215,13 +271,23 @@ label:focus {
 }
 
 #custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @green;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #custom-media.custom-spotify {
-    background-color: #66cc99;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @green;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #custom-media.custom-vlc {
@@ -276,19 +342,23 @@ label:focus {
 }
 
 #language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+    background-color: @base;
+    border-radius: 16px;
+    border: 2px solid @blue;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #keyboard-state > label {
