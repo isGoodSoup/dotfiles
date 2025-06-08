@@ -22,18 +22,18 @@ overshoot = 20
 
 # The number of bars (0-512). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
-bars = 0
+bars = 80
 bar_width = 2
-bar_spacing = 1
+bar_spacing = 2
 # bar_height is only used for output in "noritake" format
-bar_height = 32
+bar_height = 24
 
 # For SDL width and space between bars is in pixels, defaults are:
 bar_width = 20
 bar_spacing = 5
 
 # sdl_glsl have these default values, they are only used to calculate max number of bars.
-bar_width = 1
+bar_width = 2
 bar_spacing = 0
 
 
