@@ -18,7 +18,7 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    //border-color: @blue;
+    border-color: @blue;
     border-radius: 16;
     border: 2px solid;
     background-color: @bg-col;
