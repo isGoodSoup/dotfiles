@@ -2,7 +2,7 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: JetBrainsMono NL, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Arial, Roboto, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -100,6 +100,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#cava,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -303,7 +304,24 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    min-width: 30px;
+    background-color: transparent;
+    border-radius: 16px;
+    /* border: 2px solid @blue; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#tray > .active {
+    background-color: @base;
+    border-radius: 16px;
+    color: @text;
+    padding: 0 10 0 10;
+    opacity: 0.7;
+    border-top: 0.5px solid @blue;
+    border-bottom: 2px solid @blue;
 }
 
 #tray > .passive {
@@ -339,6 +357,21 @@ label:focus {
 
 #mpd.paused {
     background-color: #51a37a;
+}
+
+#cava {
+    background-color: @base;
+    border-radius: 16px;
+    /* border: 2px solid @green; */
+    color: @blue;
+    padding-bottom: 6px;
+    font-family: "bargraph";
+    font-size: 22px;
+}
+
+#cava.updated {
+    background-color: @base;
+    color: @text;
 }
 
 #language {
