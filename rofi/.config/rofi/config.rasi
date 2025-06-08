@@ -7,7 +7,7 @@ configuration{
     location: 0;
     disable-history: false;
     hide-scrollbar: false;
-    display-drun: "    Run  ";
+    display-drun: "   ";
     //display-drun: "";
     sidebar-mode: false;
 }
