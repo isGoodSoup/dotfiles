@@ -8,8 +8,8 @@
     fg-col2: #f38ba8;
     grey: #6c7086;
 
-    width: 600;
-    font: "Sans-serif 12";
+    width: 400;
+    font: "Arial 12";
 }
 
 element-text, element-icon , mode-switcher {
@@ -37,10 +37,10 @@ inputbar {
 
 prompt {
     background-color: @blue;
-    padding: 5px;
+    // padding: 5px;
     text-color: @bg-col;
-    border-radius: 3px;
-  	margin: 0px 5px 0px 0px;
+    border-radius: 24px;
+  	margin: 0px -2px 0px 0px;
   	horizontal-align: 0.5;
   	vertical-align: 0.5;
 }
@@ -76,13 +76,14 @@ element-text {
 }
 
 element-icon {
-    size: 34px;
+    size: 32px;
+    margin-right: 10px;
     vertical-align: 0.5;
 }
 
 element selected.normal {
     background-color: @blue;
-    border-radius: 10px;
+    border-radius: 12px;
     text-color: @bg-col;
 }
 
