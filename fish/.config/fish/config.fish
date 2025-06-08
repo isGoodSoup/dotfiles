@@ -1,5 +1,7 @@
 set fish_greeting
 
+pokemon-colorscripts --random --no-title
+
 export EDITOR='nvim'
 source ~/dotfiles/fish/.config/fish/fish_alias.fish
 
