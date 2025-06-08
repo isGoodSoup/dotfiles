@@ -8,6 +8,7 @@ configuration{
     disable-history: false;
     hide-scrollbar: false;
     display-drun: "    Run  ";
+    //display-drun: "";
     sidebar-mode: false;
 }
 
