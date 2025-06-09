@@ -8,9 +8,9 @@
   "margin-right": 10,
   "height": 38,
   "modules-left": [
-    // "memory",
-    "cava",
-    "cpu",
+    //"memory",
+    //"cava",
+    //"cpu",
     "disk"
   ],
   "modules-center": [
