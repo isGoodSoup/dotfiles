@@ -3,10 +3,10 @@
 "exlusive": "true",
 "passthrough": "true",
 "gtk-layer-shell": "true",
-"margin-top": 14,
+"margin-top": 10,
 "margin-left": 10,
 "margin-right": 10,
-"height": 38,
+"height": 32,
 //"width": 1500,
 "modules-left": [
 	"custom/logo",
