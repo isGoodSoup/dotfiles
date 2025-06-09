@@ -7,26 +7,27 @@
   "margin-left": 10,
   "margin-right": 10,
   "height": 38,
-  "width": 1500,
+  //"width": 1500,
   "modules-left": [
-    "custom/logo",
-    //"memory",
-    "custom/cava",
-    "disk",
-    "cpu"
-  ],
+	"custom/logo",
+	//"memory",
+	"custom/cava",
+	"disk"
+	//"cpu"
+],
   "modules-center": [
-    "hyprland/workspaces"
-  ],
+	"hyprland/workspaces"
+],
   "modules-right": [
-    //"hyprland/language",
-    "tray",
-    //"custom/cava",
-    "pulseaudio",
-    "clock",
-    "separator",
-    "custom/power"
-  ],
+	//"hyprland/language",
+	"tray",
+	//"custom/cava",
+	//"disk",
+	"pulseaudio",
+	"clock",
+	"separator",
+	"custom/power"
+],
   "tray": {
     "icon-size": 16,
     "icon-theme": "Adwaita",
