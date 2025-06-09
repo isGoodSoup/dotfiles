@@ -83,12 +83,12 @@
 },
 "clock": {
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
-	"format": "<span color='#89b4fa'></span><span color='#cdd6f4'>{:%H:%M | %a %d %b}</span>",
+	"format": " {:%H:%M  %a %d %b} ",
 	"format-alt": "{:%Y-%m-%d}"
 },
 
 "cpu": {
-	"format": "󰍛 {usage}%",
+	"format": " 󰍛 {usage}% ",
 	"interval": 1,
 	"format-alt-click": "click",
 	"format-alt": "<span color='#00FF00'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#FFFFFF'>{usage:>2}%</span> <span color='#00FF00'> 󰍛 </span>",
@@ -97,7 +97,7 @@
 },
 "memory": {
 	"interval": 3,
-	"format": "<span color='#f38ba8'> </span> <span color='#cdd6f4'>{used:0.1f}G</span>"
+	"format": "   {used:0.1f}"
 },
    
 
