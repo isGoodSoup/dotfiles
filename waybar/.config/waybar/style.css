@@ -156,15 +156,6 @@ button:hover {
     color: @base;
 }
 
-#custom-logo menu {
-	border-radius: 15px;
-	background: #161320;
-	color: #B5E8E0;
-}
-#custom-logo menuitem {
-	border-radius: 15px;
-}
-
 #battery {
     background-color: #ffffff;
     color: #000000;

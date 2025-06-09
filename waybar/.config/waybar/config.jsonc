@@ -44,12 +44,8 @@
 "custom/logo": {
 	"format": "  ",
 	"tooltip-format": "v0.49.0",
-	"on-click": "menu",
-	"menu-file": "./logo-menu.xml",
-	"menu-actions": {
-		"rofi": "exec rofi -show drun",
-		"lock": "exec hyprlock",
-	},
+	"on-click": "exec hyprlock",
+	"on-click-right": "exec rofi -show drun",
 },
 "hyprland/window": {
 	"format": "{}",
