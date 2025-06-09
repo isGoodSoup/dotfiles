@@ -8,6 +8,7 @@
 
 window#waybar {
     background-color: transparent;
+    border-radius: 24px;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: @text;
     transition-property: background-color;
@@ -110,7 +111,7 @@ button:hover {
 #window,
 #workspaces {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 12 0 12;
@@ -130,7 +131,7 @@ button:hover {
 
 #clock {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
@@ -191,7 +192,7 @@ label:focus {
 
 #cpu {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
@@ -201,7 +202,7 @@ label:focus {
 
 #memory {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
@@ -211,7 +212,7 @@ label:focus {
 
 #disk {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
@@ -225,7 +226,7 @@ label:focus {
 
 #network {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
@@ -235,7 +236,7 @@ label:focus {
 
 #network.disconnected {
     background-color: @red;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @text; */
     color: @base;
     padding: 0 10 0 10;
@@ -245,7 +246,7 @@ label:focus {
 
 #pulseaudio {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
@@ -255,12 +256,8 @@ label:focus {
 
 #pulseaudio.muted {
     background-color: @red;
-    border-radius: 16px;
     /* border: 2px solid @blue; */
     color: @base;
-    padding: 0 10 0 10;
-    margin-left: 4px;
-    margin-right: 4px;
 }
 
 #wireplumber {
@@ -274,7 +271,7 @@ label:focus {
 
 #custom-media {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @green; */
     color: @green;
     padding: 0 10 0 10;
@@ -284,7 +281,7 @@ label:focus {
 
 #custom-media.custom-spotify {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @green; */
     color: @green;
     padding: 0 10 0 10;
@@ -307,7 +304,7 @@ label:focus {
 #tray {
     min-width: 30px;
     background-color: transparent;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
@@ -317,7 +314,7 @@ label:focus {
 
 #tray > .active {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     color: @text;
     padding: 0 10 0 10;
     opacity: 0.7;
@@ -362,7 +359,7 @@ label:focus {
 
 #cava {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @green; */
     color: @blue;
     padding-bottom: 6px;
@@ -377,7 +374,7 @@ label:focus {
 
 #language {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
@@ -387,7 +384,7 @@ label:focus {
 
 #keyboard-state {
     background-color: @base;
-    border-radius: 16px;
+    border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
