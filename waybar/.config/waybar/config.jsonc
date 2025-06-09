@@ -8,17 +8,18 @@
   "margin-right": 10,
   "height": 38,
   //"width": 1500,
-  "modules-left": [
+"modules-left": [
 	"custom/logo",
 	//"memory",
 	"custom/cava",
+	"hyprland/window",
 	"disk"
 	//"cpu"
 ],
-  "modules-center": [
+"modules-center": [
 	"hyprland/workspaces"
 ],
-  "modules-right": [
+"modules-right": [
 	//"hyprland/language",
 	"tray",
 	//"custom/cava",
@@ -28,123 +29,122 @@
 	"separator",
 	"custom/power"
 ],
-  "tray": {
-    "icon-size": 16,
-    "icon-theme": "Adwaita",
-    "spacing": 2, 
-  },
-   "custom/spacer": {
+"tray": {
+	"icon-size": 16,
+	"icon-theme": "Adwaita",
+	"spacing": 2, 
+},
+"custom/spacer": {
         "format": " ", // Empty space
         "tooltip": false,
-  },
-  "separator": {
-    "format": " | "
-  },
-  "custom/logo": {
-    "format": "  ",
-    "tooltip-format": "v0.49.0",
-    "on-click": "exec hyprlock",
-  },
-  "hyprland/window": {
-    "format": "{}",
-    "max-length": 35,
-    "rewrite": {
-      "": "Harsh"
-    },
-    "separate-outputs": true
-  },
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "on-click": "activate",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "active": "",
-      "urgent": "",
-      "persistent": "",
-      "focused": "",
-      "default": "",
+},
+"separator": {
+	"format": " | "
+},
+"custom/logo": {
+	"format": "  ",
+	"tooltip-format": "v0.49.0",
+	"on-click": "exec hyprlock",
+},
+"hyprland/window": {
+	"format": "{}",
+	"max-length": 35,
+	"rewrite": {
+	"": "Harsh"
+},
+	"separate-outputs": true
+},
+"hyprland/workspaces": {
+	"format": "{icon}",
+	"on-click": "activate",
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+		"5": "",
+		"6": "",
+		"7": "",
+		"8": "",
+		"9": "",
+		"active": "",
+		"urgent": "",
+		"persistent": "",
+		"focused": "",
+		"default": "",
 
         },
-    "sort-by-number": true,
-    "persistent-workspaces": {
-      "*": 9,
-      "DP-1": 9
-    }
-  },
-  "clock": {
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
-    "format": "<span color='#89b4fa'></span><span color='#cdd6f4'>{:%H:%M | %a %d %b}</span>",
-    "format-alt": "{:%Y-%m-%d}"
-  },
+	"sort-by-number": true,
+	"persistent-workspaces": {
+		"*": 9,
+		"DP-1": 9
+	}
+},
+"clock": {
+	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
+	"format": "<span color='#89b4fa'></span><span color='#cdd6f4'>{:%H:%M | %a %d %b}</span>",
+	"format-alt": "{:%Y-%m-%d}"
+},
 
-  "cpu": {
-    "format": "󰍛 {usage}%",
-    "interval": 1,
-    "format-alt-click": "click",
-    "format-alt": "<span color='#00FF00'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#FFFFFF'>{usage:>2}%</span> <span color='#00FF00'> 󰍛 </span>",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-    "on-click": "gnome-system-monitor"
-  },
-  "memory": {
-    "interval": 3,
-    "format": "<span color='#f38ba8'> </span> <span color='#cdd6f4'>{used:0.1f}G</span>"
-  },
+"cpu": {
+	"format": "󰍛 {usage}%",
+	"interval": 1,
+	"format-alt-click": "click",
+	"format-alt": "<span color='#00FF00'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#FFFFFF'>{usage:>2}%</span> <span color='#00FF00'> 󰍛 </span>",
+	"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+	"on-click": "gnome-system-monitor"
+},
+"memory": {
+	"interval": 3,
+	"format": "<span color='#f38ba8'> </span> <span color='#cdd6f4'>{used:0.1f}G</span>"
+},
    
 
 "custom/weather": {
-    "exec": "~/.config/hypr/scripts/weather.sh",
-    "return-type": "json",
-    "interval": 600,
-    "format": "{text}"
+	"exec": "~/.config/hypr/scripts/weather.sh",
+	"return-type": "json",
+	"interval": 600,
+	"format": "{text}"
 },
 
-
-  "pulseaudio": {
-    "format": "{icon}{volume}% ",
-    "format-bluetooth": "<span color='#a6e3a1'>{icon}</span> <span color='#cdd6f4'>{volume}%</span>",
-    "tooltip": false,
-    "format-muted": " ",
-    "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
-    // "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
-    // "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [
-        " ",
-        " ",
-        "  ",
-      ]
-    }
-  },
-  "pulseaudio#microphone": {
+"pulseaudio": {
+	"format": " {icon}{volume}% ",
+	"format-bluetooth": " {icon}{volume}% ",
+	"tooltip": false,
+	"format-muted": " ",
+	"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+	// "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
+	// "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
+	"format-icons": {
+		"headphone": "",
+		"hands-free": "",
+		"headset": "",
+		"phone": "",
+		"portable": "",
+		"car": "",
+		"default": [
+			" ",
+			" ",
+			"  ",
+		]
+	}
+},
+"pulseaudio#microphone": {
 	"format": "{format_source}",
 	"format-source": "<span color='#f38ba8'> </span><span color='#cdd6f4'>{volume}%</span>",
 	"format-source-muted": "",
 	"on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
 	"on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
 	"on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 5%-",
-  },
+},
 
-  "hyprland/language": {
+"hyprland/language": {
 	"format": "<span color='#f9e2af'>󰌌</span> <span color='#cdd6f4'>{}</span>",
 	"format-ar": "ara",
 	"format-en": "eng",
 
 },
-  "custom/cava": {
+"custom/cava": {
         "cava_config": "~/dotfiles/cava/.config/cava/config",
         "framerate": 30,
         "autosens": 1,
@@ -168,13 +168,13 @@
                    "on-click-right": "mode"
                    }
 },
-  "custom/power": {
+"custom/power": {
 	"format": " ⏻ ",
 	"on-click": "exec poweroff",
 	"on-click-right": "exec reboot",
 	"tooltip-format": "Power off the PC"
 },
-  "disk":{
+"disk":{
 	"interval": 3,
 	"path": "/home",
 	"format": " {free}",
