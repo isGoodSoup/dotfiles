@@ -9,10 +9,11 @@
   "height": 38,
   "width": 1500,
   "modules-left": [
+    "custom/logo",
     //"memory",
-    //"cava",
-    //"cpu",
-    "disk"
+    "custom/cava",
+    "disk",
+    "cpu"
   ],
   "modules-center": [
     "hyprland/workspaces"
@@ -20,22 +21,28 @@
   "modules-right": [
     //"hyprland/language",
     "tray",
-    //"cava",
+    //"custom/cava",
     "pulseaudio",
     "clock",
-    "separator"
+    "separator",
+    "custom/power"
   ],
   "tray": {
     "icon-size": 16,
-    "icon-theme": "Papirus",
+    "icon-theme": "Adwaita",
     "spacing": 2, 
   },
    "custom/spacer": {
         "format": " ", // Empty space
-        "tooltip": false
+        "tooltip": false,
   },
   "separator": {
     "format": " | "
+  },
+  "custom/logo": {
+    "format": "  ",
+    "tooltip-format": "v0.49.0",
+    "on-click": "exec hyprlock",
   },
   "hyprland/window": {
     "format": "{}",
@@ -72,13 +79,13 @@
     }
   },
   "clock": {
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "<span color='#89b4fa'>󰥔  </span><span color='#cdd6f4'>{:%H:%M | %a %d %b}</span>",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
+    "format": "<span color='#89b4fa'></span><span color='#cdd6f4'>{:%H:%M | %a %d %b}</span>",
     "format-alt": "{:%Y-%m-%d}"
   },
 
   "cpu": {
-    "format": "<span color='#89b4fa'>󰍛 </span> <span color='#cdd6f4'>{usage}%</span>",
+    "format": "󰍛 {usage}%",
     "interval": 1,
     "format-alt-click": "click",
     "format-alt": "<span color='#00FF00'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#FFFFFF'>{usage:>2}%</span> <span color='#00FF00'> 󰍛 </span>",
@@ -100,13 +107,13 @@
 
 
   "pulseaudio": {
-    "format": "<span color='#a6e3a1'>{icon} </span><span color='#cdd6f4'> {volume}%</span>",
-    "format-bluetooth": "<span color='#a6e3a1'>{icon}</span>  <span color='#cdd6f4'>{volume}%</span>",
+    "format": "{icon}{volume}% ",
+    "format-bluetooth": "<span color='#a6e3a1'>{icon}</span> <span color='#cdd6f4'>{volume}%</span>",
     "tooltip": false,
     "format-muted": " ",
     "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
-    "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
+    // "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
+    // "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -122,21 +129,21 @@
     }
   },
   "pulseaudio#microphone": {
-    "format": "{format_source}",
-    "format-source": "<span color='#f38ba8'> </span><span color='#cdd6f4'>{volume}%</span>",
-    "format-source-muted": "",
-    "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
-    "on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 5%-",
+	"format": "{format_source}",
+	"format-source": "<span color='#f38ba8'> </span><span color='#cdd6f4'>{volume}%</span>",
+	"format-source-muted": "",
+	"on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
+	"on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
+	"on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 5%-",
   },
 
-   "hyprland/language": {
-    "format": "<span color='#f9e2af'>󰌌</span> <span color='#cdd6f4'>{}</span>",
-    "format-ar": "ara",
-    "format-en": "eng",
+  "hyprland/language": {
+	"format": "<span color='#f9e2af'>󰌌</span> <span color='#cdd6f4'>{}</span>",
+	"format-ar": "ara",
+	"format-en": "eng",
 
 },
-  "cava": {
+  "custom/cava": {
         "cava_config": "~/dotfiles/cava/.config/cava/config",
         "framerate": 30,
         "autosens": 1,
@@ -160,10 +167,16 @@
                    "on-click-right": "mode"
                    }
 },
+  "custom/power": {
+	"format": " ⏻ ",
+	"on-click": "exec poweroff",
+	"on-click-right": "exec reboot",
+	"tooltip-format": "Power off the PC"
+},
   "disk":{
 	"interval": 3,
-  "path": "/home",
-	"format": "<span color='#a6e3a1'>  </span><span color='#cdd6f4'>{free}</span>",
+	"path": "/home",
+	"format": " {free}",
 	"unit": "GB"
 },
 }

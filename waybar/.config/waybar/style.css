@@ -2,7 +2,7 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Arial, Roboto, Helvetica, sans-serif;
+    font-family: JetBrainsMono, Arial, Roboto, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -98,11 +98,13 @@ button:hover {
 #wireplumber,
 #custom-media,
 #tray,
+#custom-logo,
 #mode,
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#cava,
+#custom-cava,
+#custom-power,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -137,6 +139,21 @@ button:hover {
     padding: 0 10 0 10;
     margin-left: 4px;
     margin-right: 4px;
+}
+
+#custom-logo {
+    background-color: @base;
+    border-radius: 24px;
+    /* border: 2px solid @blue; */
+    color: @blue;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    /*margin-right: 4px;*/
+}
+
+#custom-logo:hover {
+    background-color: @blue;
+    color: @base;
 }
 
 #battery {
@@ -303,7 +320,7 @@ label:focus {
 
 #tray {
     min-width: 30px;
-    background-color: transparent;
+    background-color: @base;
     border-radius: 24px;
     /* border: 2px solid @blue; */
     color: @text;
@@ -317,7 +334,6 @@ label:focus {
     border-radius: 24px;
     color: @text;
     padding: 0 10 0 10;
-    opacity: 0.7;
     border-top: 0.5px solid @blue;
     border-bottom: 2px solid @blue;
 }
@@ -357,7 +373,7 @@ label:focus {
     background-color: #51a37a;
 }
 
-#cava {
+#custom-cava {
     background-color: @base;
     border-radius: 24px;
     /* border: 2px solid @green; */
@@ -367,9 +383,25 @@ label:focus {
     font-size: 22px;
 }
 
-#cava.updated {
+#custom-cava.updated {
     background-color: @base;
     color: @text;
+}
+
+#custom-power {
+    background-color: @base;
+    border-radius: 24px;
+    /* border: 2px solid @blue; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+
+}
+
+#custom-power:hover {
+    background-color: @red;
+    color: @base;
 }
 
 #language {
