@@ -1,13 +1,13 @@
 { 
-  "position": "top",
-  "exlusive": "true",
-  "passthrough": "true",
-  "gtk-layer-shell": "true",
-  "margin-top": 14,
-  "margin-left": 10,
-  "margin-right": 10,
-  "height": 38,
-  //"width": 1500,
+"position": "top",
+"exlusive": "true",
+"passthrough": "true",
+"gtk-layer-shell": "true",
+"margin-top": 14,
+"margin-left": 10,
+"margin-right": 10,
+"height": 38,
+//"width": 1500,
 "modules-left": [
 	"custom/logo",
 	//"memory",
@@ -44,7 +44,12 @@
 "custom/logo": {
 	"format": "  ",
 	"tooltip-format": "v0.49.0",
-	"on-click": "exec hyprlock",
+	"on-click": "menu",
+	"menu-file": "./logo-menu.xml",
+	"menu-actions": {
+		"rofi": "exec rofi -show drun",
+		"lock": "exec hyprlock",
+	},
 },
 "hyprland/window": {
 	"format": "{}",
