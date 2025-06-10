@@ -56,6 +56,44 @@ function p
     cd ~
 end
 
+function j
+    cd ~/odyssey/core/java/java-course/ || return 1
+
+    if test -z "$argv[1]"
+        echo "Error: No filename provided."
+        return 1
+    end
+
+    set filename (string replace -r '\.java$' '' "$argv[1]")
+
+    if not test -e "$filename.java"
+        echo "public class $filename {" > "$filename.java"
+        echo "    public static void main(String[] args) {" >> "$filename.java"
+        echo "        " >> "$filename.java"
+        echo "    }" >> "$filename.java"
+        echo "}" >> "$filename.java"
+
+        if not test "$argv[2]" = "0"
+            nvim "$filename.java"
+        end
+        echo "  Created new Java class: $filename.java"
+    else
+        if test -z "$argv[2]"
+            javac "$filename.java" && java "$filename"
+        else if test "$argv[2]" = "-e"
+            nvim "$filename.java"
+            echo "  Request to edit: $filename.java"
+        else if test "$argv[2]" = "-d"
+            rm -rf "$filename.java" "$filename.class"
+            echo "  Files were successfully deleted"
+        else
+            echo "  Unknown second argument: $argv[2]"
+            return 1
+        end
+    end
+    cd ~
+end
+
 function bstamp
 	echo "[$(date +"%Y-%m-%d")] $(date +"%H:%M")" >> ~/.bedtime.txt
 	echo "  Bedtime recorded: $(date +"%H:%M")"
