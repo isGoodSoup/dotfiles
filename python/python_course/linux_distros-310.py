@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 3.10
+
 distros = ['arch', 'ubuntu', 'debian', 'fedora', 'manjora', 'zoriOS', 'slackware', 'red hat']
 title = '\n1- Print items formatted.'
 print(title)

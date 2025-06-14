@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 4.10
+
 pizzas = ['BBQ', 'pepperoni', 'pineapple', 'cheese']
 for pizza in pizzas:
     print(f'I like {pizza.title()} pizza.')

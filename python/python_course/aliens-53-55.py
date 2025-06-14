@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 5.3 - 5.5
+
 alien_color = 'yellow'
 
 if alien_color == 'green':

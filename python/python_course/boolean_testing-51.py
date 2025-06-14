@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 5.1
+
 car = 'subaru'
 print("Is car == 'subaru'? I predict true")
 boolean = f'{car == 'subaru'}'

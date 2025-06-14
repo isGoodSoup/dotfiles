@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 5.2
+
 food = 'pizza'
 boolean = f'{food == 'pizza'}'
 print(boolean.lower())

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 4.11
+
 my_pizzas = ['bbq', 'pepperoni', 'pineapple', 'cheese']
 friend_pizzas = my_pizzas [:]
 

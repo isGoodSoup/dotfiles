@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 4.3-4.9
+
 digits21 = list(range(0,21))
 print(digits21)
 

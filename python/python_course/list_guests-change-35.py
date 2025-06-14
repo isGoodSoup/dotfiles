@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 3.5
+
 guests = ['descartes', 'freud', 'grandpa']
 print(guests)
 

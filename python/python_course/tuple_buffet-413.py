@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 4.13
+
 buffet = ['penne', 'spaguetti', 'bacon', 'angus meat', 'salad', 'fried eggs']
 print('== Lunch Menu ==')
 for dish in buffet:

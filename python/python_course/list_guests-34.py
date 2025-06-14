@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 3.4
+
 guests = ['descartes', 'freud', 'grandpa']
 
 message_1 = f'Hi, {guests[2].title()}. I hope you come. I am excited to meet you!'

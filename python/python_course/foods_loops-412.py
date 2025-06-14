@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 4.12
+
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]
 

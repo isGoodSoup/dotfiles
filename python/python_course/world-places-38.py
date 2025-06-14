@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 3.8
+
 places = ['berlin', 'la habana', 'río de janeiro', 'coppenhagen']
 # Original list
 print(places)

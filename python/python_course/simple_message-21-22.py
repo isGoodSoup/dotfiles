@@ -5,5 +5,5 @@ message = "This is just a message, from the Python Crash Course."
 print(message)
 
 # Exercise 2.2
-# message = "And this is another one."
-# print(message)
+message = "And this is another one."
+print(message)

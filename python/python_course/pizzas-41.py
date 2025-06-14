@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Exercise 4.1
+
 pizzas = ['bbq', 'pepperoni', 'pineapple', 'cheese']
 print(pizzas[0].upper())
 for pizza in pizzas[1:]:
