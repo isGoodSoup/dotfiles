@@ -59,16 +59,17 @@ button:hover {
 
 #workspaces button {
     padding: 0 6px;
-    background-color: transparent;
+    background-color: @base;
     color: @text;
 }
 
 #workspaces button:hover {
-    background: transparent;
+    background: @base;
+    color: @blue;
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    background-color: @green;
     /* box-shadow: inset 0 -3px #ffffff; */
 }
 
@@ -99,6 +100,7 @@ button:hover {
 #custom-media,
 #tray,
 #custom-logo,
+#custom-firefox,
 #mode,
 #idle_inhibitor,
 #scratchpad,
@@ -141,16 +143,37 @@ button:hover {
     margin-right: 4px;
 }
 
+#clock:hover {
+    background-color: @blue;
+    color: @base;
+}
+
 #custom-logo {
     background-color: @base;
     border-radius: 32px;
     /* border: 2px solid @blue; */
     color: @blue;
     padding: 0 10 0 10;
-    /*margin-right: 4px;*/
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #custom-logo:hover {
+    background-color: @blue;
+    color: @base;
+}
+
+#custom-firefox {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @blue; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#custom-firefox:hover {
     background-color: @blue;
     color: @base;
 }

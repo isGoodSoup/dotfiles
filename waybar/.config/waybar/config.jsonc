@@ -12,9 +12,10 @@
 "modules-left": [
 	"custom/logo",
 	//"memory",
+	"custom/firefox",
 	"custom/cava",
-	"hyprland/window",
-	"disk"
+	"hyprland/window"
+	//"disk"
 	//"cpu"
 ],
 "modules-center": [
@@ -48,11 +49,16 @@
 	"on-click": "exec hyprlock",
 	"on-click-right": "exec rofi -show drun",
 },
+"custom/firefox": {
+	"format": "  ",
+	"tooltip-format": "Open Firefox",
+	"on-click": "exec firefox & disown",
+},
 "hyprland/window": {
 	"format": "{}",
-	"max-length": 35,
+	"max-length": 48,
 	"rewrite": {
-	"": "Harsh"
+	"": "Desktop"
 },
 	"separate-outputs": true
 },
