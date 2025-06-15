@@ -117,26 +117,11 @@
 },
 
 "pulseaudio": {
-	"format": " {icon}{volume}% ",
+	"format": " {volume}% ",
 	"format-bluetooth": " {icon}{volume}% ",
 	"tooltip": false,
-	"format-muted": " ",
+	"format-muted": " muted ",
 	"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
-	// "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 10%+",
-	// "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 10%-",
-	"format-icons": {
-		"headphone": "",
-		"hands-free": "",
-		"headset": "",
-		"phone": "",
-		"portable": "",
-		"car": "",
-		"default": [
-			" ",
-			" ",
-			"  ",
-		]
-	}
 },
 "pulseaudio#microphone": {
 	"format": "{format_source}",
