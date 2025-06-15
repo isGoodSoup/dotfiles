@@ -53,12 +53,13 @@
 	"format": "  ",
 	"tooltip-format": "Open Firefox",
 	"on-click": "exec firefox & disown",
+	"on-click-right": "exec pkill firefox",
 },
 "hyprland/window": {
 	"format": "{}",
-	"max-length": 48,
+	"max-length": 32,
 	"rewrite": {
-	"": "Desktop"
+	"": "~"
 },
 	"separate-outputs": true
 },
