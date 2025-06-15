@@ -7,8 +7,8 @@ SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eilancosman/tide\x40v6
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _tide_left_items:pwd\x1egit\x1enewline\x1echaracter
-SETUVAR _tide_prompt_5287:\x1b\x5b38\x3b2\x3b52\x3b101\x3b164m\x1b\x5b49m\ue0b2\x1b\x5b48\x3b2\x3b52\x3b101\x3b164m\x20\x40PWD\x40\x20\x1b\x5b38\x3b2\x3b52\x3b101\x3b164m\x1b\x5b49m\ue0b0\x1e\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\u276f\x1e\x1b\x5b38\x3b2\x3b211\x3b215\x3b207m\x1b\x5b49m\ue0b2\x1b\x5b38\x3b2\x3b0\x3b0\x3b0m\x1b\x5b48\x3b2\x3b211\x3b215\x3b207m\x2003\x3a32\x3a45\x20\x1b\x5b38\x3b2\x3b211\x3b215\x3b207m\x1b\x5b49m\ue0b0
-SETUVAR _tide_right_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1enode\x1epython\x1erustc\x1ejava\x1etime
+SETUVAR _tide_prompt_7550:\x1b\x5b38\x3b2\x3b52\x3b101\x3b164m\x1b\x5b49m\ue0b2\x1b\x5b48\x3b2\x3b52\x3b101\x3b164m\x20\x40PWD\x40\x20\x1b\x5b38\x3b2\x3b52\x3b101\x3b164m\x1b\x5b49m\ue0b0\x1e\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\u276f
+SETUVAR _tide_right_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1enode\x1epython\x1erustc\x1ejava
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:normal
@@ -155,8 +155,8 @@ SETUVAR tide_pwd_markers:\x2ebzr\x1e\x2ecitc\x1e\x2egit\x1e\x2ehg\x1e\x2enode\x2
 SETUVAR tide_python_bg_color:444444
 SETUVAR tide_python_color:00AFAF
 SETUVAR tide_python_icon:\U000f0320
-SETUVAR tide_right_prompt_frame_enabled:true
-SETUVAR tide_right_prompt_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1edirenv\x1enode\x1epython\x1erustc\x1ejava\x1ephp\x1epulumi\x1eruby\x1ego\x1egcloud\x1ekubectl\x1edistrobox\x1etoolbox\x1eterraform\x1eaws\x1enix_shell\x1ecrystal\x1eelixir\x1ezig\x1etime
+SETUVAR tide_right_prompt_frame_enabled:false
+SETUVAR tide_right_prompt_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1edirenv\x1enode\x1epython\x1erustc\x1ejava\x1ephp\x1epulumi\x1eruby\x1ego\x1egcloud\x1ekubectl\x1edistrobox\x1etoolbox\x1eterraform\x1eaws\x1enix_shell\x1ecrystal\x1eelixir\x1ezig
 SETUVAR tide_right_prompt_prefix:\ue0b2
 SETUVAR tide_right_prompt_separator_diff_color:\ue0b2
 SETUVAR tide_right_prompt_separator_same_color:\ue0b3
@@ -182,7 +182,7 @@ SETUVAR tide_terraform_color:000000
 SETUVAR tide_terraform_icon:\U000f1062
 SETUVAR tide_time_bg_color:D3D7CF
 SETUVAR tide_time_color:000000
-SETUVAR tide_time_format:\x25T
+SETUVAR tide_time_format:
 SETUVAR tide_toolbox_bg_color:613583
 SETUVAR tide_toolbox_color:000000
 SETUVAR tide_toolbox_icon:\ue24f
