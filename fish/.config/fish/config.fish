@@ -97,6 +97,11 @@ end
 function bstamp
 	echo "[$(date +"%Y-%m-%d")] $(date +"%H:%M")" >> ~/.bedtime.txt
 	echo "  Bedtime recorded: $(date +"%H:%M")"
+	cd ~/dotfiles/bashrc/
+	git add .bedtime.txt
+	git commit -m 'bstamp'
+	git push -u origin main
+	cd
 end
 
 function mkcd
