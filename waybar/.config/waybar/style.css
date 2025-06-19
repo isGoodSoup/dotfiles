@@ -105,6 +105,7 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #custom-cava,
+#custom-swaync,
 #custom-power,
 #mpd {
     padding: 0 10px;
@@ -421,6 +422,21 @@ label:focus {
 #custom-cava.updated {
     background-color: @base;
     color: @text;
+}
+
+#custom-swaync {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @blue; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#custom-swaync:hover {
+   background-color: @blue;
+   color: @base;
 }
 
 #custom-power {

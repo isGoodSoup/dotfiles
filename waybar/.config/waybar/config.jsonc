@@ -29,7 +29,8 @@
 	"pulseaudio",
 	"clock",
 	"separator",
-	"custom/power"
+	//"custom/power",
+	"custom/swaync",
 ],
 "tray": {
 	"icon-size": 16,
@@ -54,6 +55,11 @@
 	"tooltip-format": "Open Firefox",
 	"on-click": "exec firefox & disown",
 	"on-click-right": "exec pkill firefox",
+},
+"custom/swaync": {
+	"format": "   ",
+	"tooltip-format": "Notification Center (swaync)",
+	"on-click": "exec swaync-client -t",
 },
 "hyprland/window": {
 	"format": "{}",
