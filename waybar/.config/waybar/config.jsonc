@@ -7,7 +7,7 @@
 "margin-bottom": 10,
 "margin-left": 10,
 "margin-right": 10,
-"height": 36,
+"height": 40,
 //"width": 1500,
 "modules-left": [
 	"custom/logo",
@@ -28,7 +28,7 @@
 	//"disk",
 	"pulseaudio",
 	"clock",
-	"separator",
+	//"separator",
 	//"custom/power",
 	"custom/swaync",
 ],
@@ -57,7 +57,7 @@
 	"on-click-right": "exec pkill firefox",
 },
 "custom/swaync": {
-	"format": "   ",
+	"format": " ",
 	"tooltip-format": "Notification Center (swaync)",
 	"on-click": "exec swaync-client -t",
 },
@@ -97,7 +97,7 @@
 },
 "clock": {
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
-	"format": " {:%H:%M  %a %d %b} ",
+	"format": "{:%H:%M  %a %d %b}",
 	"format-alt": "{:%Y-%m-%d}"
 },
 
