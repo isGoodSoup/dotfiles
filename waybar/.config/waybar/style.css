@@ -111,7 +111,21 @@ button:hover {
     color: #ffffff;
 }
 
-#window,
+#window {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @blue; */
+    color: @text;
+    padding: 0 12 0 12;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#window:hover {
+    background-color: @base;
+    color: @blue;
+}
+
 #workspaces {
     background-color: @base;
     border-radius: 32px;

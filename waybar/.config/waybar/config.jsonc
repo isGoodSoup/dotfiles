@@ -12,7 +12,7 @@
 "modules-left": [
 	"custom/logo",
 	//"memory",
-	"custom/firefox",
+	//"custom/firefox",
 	"custom/cava",
 	"hyprland/window"
 	//"disk"
