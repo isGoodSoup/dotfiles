@@ -2,6 +2,10 @@ set fish_greeting
 
 #pokemon-colorscripts --random --no-title
 
+function fish_prompt
+	string join '' -- (set_color blue)(prompt_pwd)(set_color green)' ❯ '(set_color normal)
+end
+
 export EDITOR='nvim'
 source ~/dotfiles/fish/.config/fish/fish_alias.fish
 
