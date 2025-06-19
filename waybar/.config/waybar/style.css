@@ -52,9 +52,8 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: @base;
-    border: 2px solid @blue;
-    color: @blue;
+    background-color: @blue;
+    color: @base;
 }
 
 #workspaces button {
@@ -123,9 +122,8 @@ button:hover {
 }
 
 #window:hover {
-    background-color: @base;
-    border: 2px solid @blue;
-    color: @blue;
+    background-color: @blue;
+    color: @base;
 }
 
 #workspaces {
@@ -159,9 +157,8 @@ button:hover {
 }
 
 #clock:hover {
-    background-color: @base;
-    border: 2px solid @blue;
-    color: @blue;
+    background-color: @blue;
+    color: @base;
 }
 
 #custom-logo {
@@ -190,9 +187,8 @@ button:hover {
 }
 
 #custom-firefox:hover {
-    background-color: @base;
-    border: 2px solid @blue;
-    color: @blue;
+    background-color: @blue;
+    color: @base;
 }
 
 #battery {
@@ -359,7 +355,7 @@ label:focus {
 
 #tray {
     min-width: 30px;
-    background-color: @base;
+    background-color: transparent;
     border-radius: 32px;
     /* border: 2px solid @blue; */
     color: @text;
@@ -439,9 +435,8 @@ label:focus {
 }
 
 #custom-power:hover {
-    background-color: @base;
-    border: 2px solid @red;
-    color: @red;
+    background-color: @red;
+    color: @base;
 }
 
 #language {
