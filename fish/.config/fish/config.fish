@@ -132,9 +132,6 @@ end
 function dotvim
 	cd ~/dotfiles/$argv[1]/.config/$argv[1]/
 	nvim "$argv[2]"
-	git add "$argv[1]"
-	git commit -m "Updated $argv[1]"
-	git push -u origin main
 	cd
 end
 function fox
