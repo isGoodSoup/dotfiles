@@ -143,6 +143,7 @@ listview {
     border-radius:               0px;
     border-color:                @selected;
     background-color:            transparent;
+    transparency:		 "real";
     text-color:                  @foreground;
     cursor:                      "default";
 }
@@ -161,7 +162,7 @@ element {
     cursor:                      pointer;
 }
 element-text {
-    font:                        "feather bold 32";
+    font:                        "JetBrainsMono SemiBold 32";
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
