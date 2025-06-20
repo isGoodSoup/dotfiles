@@ -23,8 +23,8 @@ shutdown=''
 reboot=''
 lock=''
 logout='󰍃'
-yes='Yes'
-no='No'
+yes='   '
+no='  󰜺 '
 
 # Rofi CMD
 rofi_cmd() {
@@ -39,8 +39,9 @@ confirm_cmd() {
 	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 350px;}' \
 		-theme-str 'mainbox {children: [ "message", "listview" ];}' \
 		-theme-str 'listview {columns: 2; lines: 1;}' \
-		-theme-str 'element-text {horizontal-align: 0.5;}' \
-		-theme-str 'textbox {horizontal-align: 0.5;}' \
+		-theme-str 'element {horizontal-align: center;}' \
+		-theme-str 'element-text {horizontal-align: center;}' \
+		-theme-str 'textbox {horizontal-align: center;}' \
 		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
@@ -54,7 +55,7 @@ confirm_exit() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$lock\n$logout\n$reboot\n$shutdown" | rofi_cmd
+	echo -e "$logout\n$lock\n$reboot\n$shutdown" | rofi_cmd
 }
 
 # Execute Command
@@ -74,6 +75,10 @@ run_cmd() {
 				i3-msg exit
 			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
 				qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+			elif [[ "$DESKTOP_SESSION" == 'hyprland' ]]; then
+				hyprctl dispatch exit
+			else 
+				loginctl kill-user $(whoami)
 			fi
 		fi
 	else
@@ -95,6 +100,8 @@ case ${chosen} in
 			betterlockscreen -l
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
+		elif [[ -x '/usr/bin/hyprlock'  ]]; then
+			hyprlock
 		fi 
         ;;
     $logout)
