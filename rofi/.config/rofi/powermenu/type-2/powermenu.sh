@@ -23,8 +23,8 @@ shutdown=''
 reboot=''
 lock=''
 logout='󰍃'
-yes='   '
-no='  󰜺 '
+yes=''
+no='󰜺'
 
 # Rofi CMD
 rofi_cmd() {
@@ -55,7 +55,7 @@ confirm_exit() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$logout\n$lock\n$reboot\n$shutdown" | rofi_cmd
+	echo -e "$lock\n$reboot\n$shutdown" | rofi_cmd
 }
 
 # Execute Command
