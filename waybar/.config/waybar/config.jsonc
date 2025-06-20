@@ -47,7 +47,7 @@
 "custom/logo": {
 	"format": "  ",
 	"tooltip-format": "v0.49.0",
-	"on-click": "exec wlogout",
+	"on-click": "exec hyprlock",
 	"on-click-right": "exec rofi -show drun",
 },
 "custom/firefox": {
