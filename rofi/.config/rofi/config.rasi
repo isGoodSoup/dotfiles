@@ -7,8 +7,8 @@ configuration{
 	location: 0;
 	disable-history: false;
 	hide-scrollbar: false;
-	display-drun: "    Run  ";
-	display-calc: "   Calc ";
+	display-drun: "     ";
+	display-calc: "    ";
 	//display-drun: "";
 	sidebar-mode: false;
 }
