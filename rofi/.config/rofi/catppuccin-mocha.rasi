@@ -8,7 +8,7 @@
     fg-col2: #f38ba8;
     grey: #6c7086;
 
-    width: 400;
+    width: 600;
     font: "Arial 12";
 }
 
@@ -18,9 +18,9 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    //border-color: @blue;
+    border-color: @blue;
     border-radius: 16;
-    //border: 2px solid;
+    border: 2px solid;
     background-color: @bg-col;
 }
 
@@ -58,9 +58,9 @@ entry {
 }
 
 listview {
-    require-input: true;
+    //require-input: true;
     padding: 15px 0px 0px 0px;
-    columns: 1;
+    columns: 2;
     lines: 4;
     background-color: @bg-col;
 }
