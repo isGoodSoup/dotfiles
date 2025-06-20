@@ -48,7 +48,7 @@
 	"format": "  ",
 	"tooltip-format": "v0.49.0",
 	"on-click": "exec hyprlock",
-	"on-click-right": "exec rofi -show drun",
+	"on-click-right": "exec ~/dotfiles/rofi/.config/rofi/powermenu/type-2/powermenu.sh",
 },
 "custom/firefox": {
 	"format": "  ",
