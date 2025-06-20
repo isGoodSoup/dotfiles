@@ -9,7 +9,6 @@
 window#waybar {
     background-color: @base;
     border-radius: 32px;
-    border: 2px solid @base;
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;
@@ -52,8 +51,7 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: @blue;
-    color: @base;
+    color: @blue;
 }
 
 #workspaces button {
@@ -123,8 +121,7 @@ button:hover {
 }
 
 #window:hover {
-    background-color: @blue;
-    color: @base;
+    color: @blue;
 }
 
 #workspaces {
@@ -153,7 +150,7 @@ button:hover {
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
-    margin-left: 4px;
+    margin-left: 0px;
     margin-right: 0px;
 }
 
@@ -304,13 +301,12 @@ label:focus {
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
-    margin-right: 4px;
+    margin-right: 0px;
 }
 
 #pulseaudio.muted {
-    background-color: @red;
     /* border: 2px solid @blue; */
-    color: @base;
+    color: @red;
 }
 
 #wireplumber {

@@ -123,10 +123,10 @@
 },
 
 "pulseaudio": {
-	"format": " {volume}% ",
-	"format-bluetooth": " {icon}{volume}% ",
+	"format": "{volume}%",
+	"format-bluetooth": "{icon}{volume}%",
 	"tooltip": false,
-	"format-muted": " muted ",
+	"format-muted": "muted",
 	"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
 },
 "pulseaudio#microphone": {
