@@ -30,7 +30,7 @@ count_cut      = { fg = "#1e1e2e", bg = "#f38ba8" }
 count_selected = { fg = "#1e1e2e", bg = "#f9e2af" }
 
 # Border
-border_symbol = "│"
+border_symbol = " "
 border_style  = { fg = "#7f849c" }
 
 # : }}}
@@ -39,8 +39,8 @@ border_style  = { fg = "#7f849c" }
 # : Tabs {{{
 
 [tabs]
-active   = { fg = "#1e1e2e", bg = "#89b4fa", bold = true }
-inactive = { fg = "#89b4fa", bg = "#313244" }
+active   = { fg = "#1e1e2e", bg = "#cba6f7", bold = true }
+inactive = { fg = "#cba6f7", bg = "#313244" }
 
 # : }}}
 
@@ -49,8 +49,8 @@ inactive = { fg = "#89b4fa", bg = "#313244" }
 
 [mode]
 
-normal_main = { fg = "#1e1e2e", bg = "#89b4fa", bold = true }
-normal_alt  = { fg = "#89b4fa", bg = "#313244" }
+normal_main = { fg = "#1e1e2e", bg = "#cba6f7", bold = true }
+normal_alt  = { fg = "#cba6f7", bg = "#313244" }
 
 # Select mode
 select_main = { fg = "#1e1e2e", bg = "#94e2d5", bold = true }
@@ -68,14 +68,14 @@ unset_alt  = { fg = "#f2cdcd", bg = "#313244" }
 [status]
 # Permissions
 perm_sep   = { fg = "#7f849c" }
-perm_type  = { fg = "#89b4fa" }
+perm_type  = { fg = "#cba6f7" }
 perm_read  = { fg = "#f9e2af" }
 perm_write = { fg = "#f38ba8" }
 perm_exec  = { fg = "#a6e3a1" }
 
 # Progress
 progress_label  = { fg = "#ffffff", bold = true }
-progress_normal = { fg = "#89b4fa", bg = "#45475a" }
+progress_normal = { fg = "#cba6f7", bg = "#45475a" }
 progress_error  = { fg = "#f38ba8", bg = "#45475a" }
 
 # : }}}
@@ -84,7 +84,7 @@ progress_error  = { fg = "#f38ba8", bg = "#45475a" }
 # : Pick {{{
 
 [pick]
-border   = { fg = "#89b4fa" }
+border   = { fg = "#cba6f7" }
 active   = { fg = "#f5c2e7", bold = true }
 inactive = {}
 
@@ -94,7 +94,7 @@ inactive = {}
 # : Input {{{
 
 [input]
-border   = { fg = "#89b4fa" }
+border   = { fg = "#cba6f7" }
 title    = {}
 value    = {}
 selected = { reversed = true }
@@ -105,7 +105,7 @@ selected = { reversed = true }
 # : Completion {{{
 
 [cmp]
-border = { fg = "#89b4fa" }
+border = { fg = "#cba6f7" }
 
 # : }}}
 
@@ -113,7 +113,7 @@ border = { fg = "#89b4fa" }
 # : Tasks {{{
 
 [tasks]
-border  = { fg = "#89b4fa" }
+border  = { fg = "#cba6f7" }
 title   = {}
 hovered = { fg = "#f5c2e7", underline = true }
 
@@ -173,7 +173,7 @@ rules = [
 
 	# Fallback
 	{ name = "*", fg = "#cdd6f4" },
-	{ name = "*/", fg = "#89b4fa" }
+	{ name = "*/", fg = "#cba6f7" }
 ]
 
 # : }}}
