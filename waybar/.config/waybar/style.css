@@ -51,7 +51,7 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    color: @blue;
+    color: @mauve;
 }
 
 #workspaces button {
@@ -62,7 +62,7 @@ button:hover {
 
 #workspaces button:hover {
     background: transparent;
-    color: @blue;
+    color: @mauve;
 }
 
 #workspaces button.focused {
@@ -76,7 +76,7 @@ button:hover {
 }
 
 #workspaces button.active {
-    color: @blue;
+    color: @mauve;
 }
 
 #mode {
@@ -121,7 +121,7 @@ button:hover {
 }
 
 #window:hover {
-    color: @blue;
+    color: @mauve;
 }
 
 #workspaces {
@@ -155,7 +155,7 @@ button:hover {
 }
 
 #clock:hover {
-    background-color: @blue;
+    background-color: @mauve;
     color: @base;
 }
 
@@ -163,14 +163,14 @@ button:hover {
     background-color: transparent;
     border-radius: 32px;
     /* border: 2px solid @blue; */
-    color: @blue;
+    color: @mauve;
     padding: 0 10 0 10;
     margin-left: 0px;
     margin-right: 4px;
 }
 
 #custom-logo:hover {
-    background-color: @blue;
+    background-color: @mauve;
     color: @base;
 }
 
@@ -185,7 +185,7 @@ button:hover {
 }
 
 #custom-firefox:hover {
-    background-color: @blue;
+    background-color: @mauve;
     color: @base;
 }
 
@@ -366,8 +366,8 @@ label:focus {
     border-radius: 32px;
     color: @text;
     padding: 0 10 0 10;
-    border-top: 0.5px solid @blue;
-    border-bottom: 2px solid @blue;
+    /*border-top: 0.5px solid @blue;
+    border-bottom: 2px solid @blue;*/
 }
 
 #tray > .passive {
@@ -431,7 +431,7 @@ label:focus {
 }
 
 #custom-swaync:hover {
-   background-color: @blue;
+   background-color: @mauve;
    color: @base;
 }
 
