@@ -22,6 +22,7 @@
 	"hyprland/workspaces"
 ],
 "modules-right": [
+	"battery",
 	//"hyprland/language",
 	"tray",
 	//"custom/cava",
@@ -94,6 +95,18 @@
 		"*": 9,
 		"DP-1": 9
 	}
+},
+"battery": {
+	"states": {
+            	"warning": 30,
+        	"critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-full": "  {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "]
 },
 "clock": {
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",

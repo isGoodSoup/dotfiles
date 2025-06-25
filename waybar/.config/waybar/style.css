@@ -190,26 +190,37 @@ button:hover {
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: transparent;
+    border-radius: 32px;
+    /* border: 2px solid @blue; */
+    color: @mauve;
+    padding: 0 10 0 10;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
+#battery:hover {
+    background-color: @mauve;
+    color: @base;
+}
+
+
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    background-color: transparent;
+    color: @mauve;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
+        background-color: @text;
         color: #000000;
     }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    background-color: transparent;
+    color: @red;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
