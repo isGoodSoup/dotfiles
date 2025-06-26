@@ -98,6 +98,12 @@ function j
     cd ~
 end
 
+function pcode
+	cd $HOME/dotfiles/python/python_course/
+	code $argv[1]
+	cd
+end
+
 function bstamp
 	echo "[$(date +"%Y-%m-%d")] $(date +"%H:%M")" >> ~/.bedtime.txt
 	echo "  Bedtime recorded: $(date +"%H:%M")"
