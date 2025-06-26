@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 HOME_DIR=$HOME/dotfiles/hypr/.config/hypr
 
