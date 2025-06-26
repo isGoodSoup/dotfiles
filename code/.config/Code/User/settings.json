@@ -4,5 +4,9 @@
     "editor.fontSize": 16,
     "editor.fontFamily": "JetBrainsMono",
     "editor.fontLigatures": true,
-    "editor.wordWrap": "wordWrapColumn"
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.wordSegmenterLocales": null,
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "bottom"
 }
