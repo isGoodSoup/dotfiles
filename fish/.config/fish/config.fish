@@ -27,7 +27,7 @@ function lsb
 end
 
 function p
-    cd ~/dotfiles/python/scripts/ || return 1
+    cd ~/dotfiles/scripts/lang/python/ || return 1
 
     if test -z "$argv[1]"
         echo "Error: No filename provided."
@@ -99,8 +99,8 @@ function j
 end
 
 function pcode
-	cd $HOME/dotfiles/python/scripts/
-	code $argv[1]
+	cd $HOME/dotfiles/scripts/$argv[1]/
+	code $argv[2]
 	cd
 end
 
