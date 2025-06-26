@@ -1,9 +1,3 @@
-xclip < ~/.ssh/id_ed25519.pub
-xclip < ~/.ssh/id_ed25519
-cat ~/.ssh/id_ed25519.pub
-y .ssh
-ssh-keygen -t ed25519 -C "microsoft.delusion983@passinbox.com"
-cat .ssh/id_ed25519.pbu
 cat .ssh/id_ed25519.pub
 q
 alias | grep 'clip'
