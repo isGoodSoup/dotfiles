@@ -21,7 +21,7 @@ function lsb() {
 }
 
 function p() {
-	cd $HOME/dotfiles/python/python_course/ || return 1
+	cd $HOME/dotfiles/scripts/python/ || return 1
 	if [[ ! -f $1 ]]; then
 		echo "#!/usr/bin/python" > $1
 		if [[ $2 == 0 ]]; then
