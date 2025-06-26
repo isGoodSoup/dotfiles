@@ -27,7 +27,7 @@ function lsb
 end
 
 function p
-    cd ~/dotfiles/python/python_course/ || return 1
+    cd ~/dotfiles/python/scripts/ || return 1
 
     if test -z "$argv[1]"
         echo "Error: No filename provided."
@@ -99,7 +99,7 @@ function j
 end
 
 function pcode
-	cd $HOME/dotfiles/python/python_course/
+	cd $HOME/dotfiles/python/scripts/
 	code $argv[1]
 	cd
 end
