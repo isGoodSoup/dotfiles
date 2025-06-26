@@ -138,6 +138,7 @@ function dotvim
 	nvim "$argv[2]"
 	cd
 end
+
 function fox
 	set -f url "$argv[1]"
 	if test -n "$url"
@@ -151,6 +152,12 @@ function fox
 			nohup firefox & disown
 		end &> /dev/null
 	end
+end
+
+function note
+	set -l note_file "$(touch "$(date +"Y%-M%-D%").txt")"
+	mv $note_file ~/$argv[1]
+	nvim $note_file
 end
 
 function bye
