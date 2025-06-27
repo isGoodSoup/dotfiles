@@ -8,5 +8,6 @@
     "editor.wordWrapColumn": 80,
     "editor.wordSegmenterLocales": null,
     "editor.minimap.enabled": false,
-    "workbench.activityBar.location": "bottom"
+    "workbench.activityBar.location": "bottom",
+    "workbench.settings.applyToAllProfiles": []
 }
