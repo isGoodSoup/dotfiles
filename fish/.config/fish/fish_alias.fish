@@ -2,12 +2,13 @@ alias fishes="nvim ~/dotfiles/fish/.config/fish/fish_alias.fish"
 alias fishconf="nvim ~/dotfiles/fish/.config/fish/config.fish"
 
 export DOTS='~/dotfiles/'
-export PYTH='~/dotfiles/python/python_course/'
+export PYTH='~/dotfiles/scripts/lang/python'
 
 alias aur="yay -Qq | grep"
 alias btop="bashtop"
 alias cl="clear"
 alias clip="xclip -sel c <"
+alias codeconf="nvim ~/dotfiles/code/.config/Code/User/settings.json"
 alias cp="cp -i"
 alias dfi="df --si -T"
 alias dots="y $DOTS"

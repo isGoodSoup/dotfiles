@@ -3,7 +3,7 @@ set fish_greeting
 #pokemon-colorscripts --random --no-title
 
 function fish_prompt
-	string join '' -- (set_color blue)(prompt_pwd)(set_color green)' ❯ '(set_color normal)
+	string join '' -- (set_color cba6f7)(pwd)(set_color green)\n'❯ '(set_color normal)
 end
 
 export EDITOR='nvim'
@@ -23,7 +23,7 @@ function y
 end
 
 function lsb
-	lsblk -Ax name -o NAME,MAJ:MIN,ROTA,SIZE,TYPE,FSTYPE,MOUNTPOINTS
+	lsblk --tree -x name -o NAME,MAJ:MIN,ROTA,SIZE,TYPE,FSTYPE,MOUNTPOINTS
 end
 
 function p
@@ -99,7 +99,7 @@ function j
 end
 
 function pcode
-	cd $HOME/dotfiles/scripts/$argv[1]/
+	cd $HOME/dotfiles/scripts/lang/$argv[1]/
 	code $argv[2]
 	cd
 end
@@ -143,6 +143,10 @@ function dotvim
 	cd ~/dotfiles/$argv[1]/.config/$argv[1]/
 	nvim "$argv[2]"
 	cd
+end
+
+function hypr-toggle
+	sh ~/dotfiles/hypr_toggle.sh
 end
 
 function fox
