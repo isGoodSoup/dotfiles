@@ -170,6 +170,14 @@ function note
 	nvim $note_file
 end
 
+function upt-alx
+	cd $HOME/alxandria/
+	git add $argv[1]
+	git commit -m "$argv[2]"
+	git push -u origin main
+	cd
+end
+
 function bye
 	cowsay 'Goodbye'
 	sleep 1
