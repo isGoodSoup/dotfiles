@@ -24,8 +24,8 @@ configuration {
     font:                        "JetBrains Mono Nerd Font 12";
     background:                  #1E1E2E;
     background-alt:              #1E1E2E;
-    foreground:                  #FFFFFF;
-    selected:                    #5865F2;
+	foreground:              #FFFFFF;
+    selected:                    #CBA6F7;
     active:                      #9878FF;
     urgent:                      #7D0075;
 }
