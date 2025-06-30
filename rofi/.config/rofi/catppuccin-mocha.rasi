@@ -20,7 +20,7 @@ element-text, element-icon , mode-switcher {
 
 window {
     border-color: @red;
-    border-radius: 16;
+    //border-radius: 16;
     border: 3px solid;
     background-color: @bg-col;
 }
@@ -54,7 +54,7 @@ textbox-prompt-colon {
 
 entry {
     padding: 6px;
-    text-color: @bg-col;
+    text-color: @fg-col;
     background-color: @glass;
     vertical-align: 0.5;
 }
@@ -86,7 +86,7 @@ element-icon {
 
 element selected.normal {
     background-color: @red;
-    border-radius: 16px;
+    border-radius: 20px;
     text-color: @bg-col;
 }
 
