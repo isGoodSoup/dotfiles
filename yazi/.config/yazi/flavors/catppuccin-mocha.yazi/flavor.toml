@@ -39,8 +39,8 @@ border_style  = { fg = "#7f849c" }
 # : Tabs {{{
 
 [tabs]
-active   = { fg = "#1e1e2e", bg = "#fc564a", bold = true }
-inactive = { fg = "#fc564a", bg = "#313244" }
+active   = { fg = "#1e1e2e", bg = "#cba6f7", bold = true }
+inactive = { fg = "#cba6f7", bg = "#313244" }
 
 # : }}}
 
@@ -49,8 +49,8 @@ inactive = { fg = "#fc564a", bg = "#313244" }
 
 [mode]
 
-normal_main = { fg = "#1e1e2e", bg = "#fc564a", bold = true }
-normal_alt  = { fg = "#fc564a", bg = "#313244" }
+normal_main = { fg = "#1e1e2e", bg = "#cba6f7", bold = true }
+normal_alt  = { fg = "#cba6f7", bg = "#313244" }
 
 # Select mode
 select_main = { fg = "#1e1e2e", bg = "#94e2d5", bold = true }
@@ -68,14 +68,14 @@ unset_alt  = { fg = "#f2cdcd", bg = "#313244" }
 [status]
 # Permissions
 perm_sep   = { fg = "#7f849c" }
-perm_type  = { fg = "#fc564a" }
+perm_type  = { fg = "#cba6f7" }
 perm_read  = { fg = "#f9e2af" }
 perm_write = { fg = "#f38ba8" }
 perm_exec  = { fg = "#a6e3a1" }
 
 # Progress
 progress_label  = { fg = "#ffffff", bold = true }
-progress_normal = { fg = "#fc564a", bg = "#45475a" }
+progress_normal = { fg = "#cba6f7", bg = "#45475a" }
 progress_error  = { fg = "#f38ba8", bg = "#45475a" }
 
 # : }}}
@@ -84,7 +84,7 @@ progress_error  = { fg = "#f38ba8", bg = "#45475a" }
 # : Pick {{{
 
 [pick]
-border   = { fg = "#fc564a" }
+border   = { fg = "#cba6f7" }
 active   = { fg = "#f5c2e7", bold = true }
 inactive = {}
 
@@ -94,7 +94,7 @@ inactive = {}
 # : Input {{{
 
 [input]
-border   = { fg = "#fc564a" }
+border   = { fg = "#cba6f7" }
 title    = {}
 value    = {}
 selected = { reversed = true }
@@ -105,7 +105,7 @@ selected = { reversed = true }
 # : Completion {{{
 
 [cmp]
-border = { fg = "#fc564a" }
+border = { fg = "#cba6f7" }
 
 # : }}}
 
@@ -113,7 +113,7 @@ border = { fg = "#fc564a" }
 # : Tasks {{{
 
 [tasks]
-border  = { fg = "#fc564a" }
+border  = { fg = "#cba6f7" }
 title   = {}
 hovered = { fg = "#f5c2e7", underline = true }
 
@@ -173,7 +173,7 @@ rules = [
 
 	# Fallback
 	{ name = "*", fg = "#cdd6f4" },
-	{ name = "*/", fg = "#fc564a" }
+	{ name = "*/", fg = "#cba6f7" }
 ]
 
 # : }}}
