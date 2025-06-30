@@ -5,7 +5,7 @@
     selected-col: #1e1e2e;
     blue: #89b4fa;
     mauve: #cba6f7;
-    red: #C10F01;
+    red: #FC564A;
     fg-col: #cdd6f4;
     fg-col2: #f38ba8;
     glass: rgba(0, 0, 0, 0.0); 
@@ -19,7 +19,7 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    border-color: @mauve;
+    border-color: @red;
     border-radius: 16;
     border: 3px solid;
     background-color: @bg-col;
@@ -38,7 +38,7 @@ inputbar {
 }
 
 prompt {
-    background-color: @mauve;
+    background-color: @red;
     //padding: 5px;
     text-color: @bg-col;
     border-radius: 12px;
@@ -85,7 +85,7 @@ element-icon {
 }
 
 element selected.normal {
-    background-color: @mauve;
+    background-color: @red;
     border-radius: 16px;
     text-color: @bg-col;
 }
@@ -108,6 +108,6 @@ message {
 textbox {
     padding: 6px;
     margin: 20px 0px 0px 20px;
-    text-color: @mauve;
+    text-color: @red;
     background-color: @glass;
 }
