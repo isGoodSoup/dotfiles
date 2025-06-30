@@ -120,10 +120,6 @@ button:hover {
     margin-right: 4px;
 }
 
-#window:hover {
-    color: @mauve;
-}
-
 #workspaces {
     background-color: transparent;
     border-radius: 32px;
