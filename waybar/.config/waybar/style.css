@@ -51,7 +51,7 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    color: @mauve;
+    color: @blurple;
 }
 
 #workspaces button {
@@ -62,7 +62,7 @@ button:hover {
 
 #workspaces button:hover {
     background: transparent;
-    color: @mauve;
+    color: @blurple;
 }
 
 #workspaces button.focused {
@@ -76,7 +76,7 @@ button:hover {
 }
 
 #workspaces button.active {
-    color: @mauve;
+    color: @blurple;
 }
 
 #mode {
@@ -151,7 +151,7 @@ button:hover {
 }
 
 #clock:hover {
-    background-color: @mauve;
+    background-color: @blurple;
     color: @base;
 }
 
@@ -159,14 +159,14 @@ button:hover {
     background-color: transparent;
     border-radius: 32px;
     /* border: 2px solid @blue; */
-    color: @mauve;
+    color: @blurple;
     padding: 0 10 0 10;
     margin-left: 0px;
     margin-right: 4px;
 }
 
 #custom-logo:hover {
-    background-color: @mauve;
+    background-color: @blurple;
     color: @base;
 }
 
@@ -181,7 +181,7 @@ button:hover {
 }
 
 #custom-firefox:hover {
-    background-color: @mauve;
+    background-color: @blurple;
     color: @base;
 }
 
@@ -189,21 +189,21 @@ button:hover {
     background-color: transparent;
     border-radius: 32px;
     /* border: 2px solid @blue; */
-    color: @mauve;
+    color: @blurple;
     padding: 0 10 0 10;
     margin-left: 1px;
     margin-right: 1px;
 }
 
 #battery:hover {
-    background-color: @mauve;
+    background-color: @blurple;
     color: @base;
 }
 
 
 #battery.charging, #battery.plugged {
     background-color: transparent;
-    color: @mauve;
+    color: @blurple;
 }
 
 @keyframes blink {
@@ -438,7 +438,7 @@ label:focus {
 }
 
 #custom-swaync:hover {
-   background-color: @mauve;
+   background-color: @blurple;
    color: @base;
 }
 

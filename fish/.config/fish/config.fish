@@ -3,7 +3,7 @@ set fish_greeting
 #pokemon-colorscripts --random --no-title
 
 function fish_prompt
-	string join '' -- (set_color cba6f7)(pwd)(set_color green)\n'❯ '(set_color normal)
+	string join '' -- (set_color 5865F2)(pwd)(set_color green)\n'❯ '(set_color normal)
 end
 
 export EDITOR='nvim'

@@ -9,23 +9,23 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser,window";
+	modi:                       "drun,run,window";
     show-icons:                 true;
-    display-drun:               "APPS";
-    display-run:                "RUN";
-    display-filebrowser:        "FILES";
-    display-window:             "WINDOW";
+    display-drun:               "drun";
+    display-run:                "run";
+    display-filebrowser:        "file";
+    display-window:             "wnd";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "JetBrains Mono Nerd Font 10";
-    background:                  #180F39;
-    background-alt:              #32197D;
+    font:                        "JetBrains Mono Nerd Font 12";
+    background:                  #1E1E2E;
+    background-alt:              #1E1E2E;
     foreground:                  #FFFFFF;
-    selected:                    #FF00F1;
+    selected:                    #5865F2;
     active:                      #9878FF;
     urgent:                      #7D0075;
 }
@@ -37,13 +37,13 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       1000px;
+    width:                       800px;
     x-offset:                    0px;
     y-offset:                    0px;
 
     /* properties for all widgets */
     enabled:                     true;
-    border-radius:               15px;
+    border-radius:               12px;
     cursor:                      "default";
     background-color:            @background;
 }
@@ -126,7 +126,7 @@ button selected {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       8;
+    lines:                       6;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
