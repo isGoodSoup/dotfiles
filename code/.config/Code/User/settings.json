@@ -10,5 +10,6 @@
     "workbench.settings.applyToAllProfiles": [],
     "editor.fontWeight": "600",
     "redhat.telemetry.enabled": true,
-    "workbench.panel.showLabels": false
+    "workbench.panel.showLabels": false,
+    "editor.minimap.enabled": false
 }
