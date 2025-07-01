@@ -164,10 +164,10 @@ function fox
 	end
 end
 
-function note
-	set -l note_file "$(touch "$(date +"Y%-M%-D%").txt")"
-	mv $note_file ~/$argv[1]
-	nvim $note_file
+function new-note
+	set -l $NOTE_DIR ~/alxandria/notas/curso/
+	set -l $NOTE_FILE echo "nota" >> $NOTE_DIR/$(date +"Y%-M%-D%").txt
+	nvim $NOTE_FILE
 end
 
 function upt-alx
