@@ -7,8 +7,8 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80,
     "editor.wordSegmenterLocales": null,
-    "editor.minimap.enabled": false,
     "workbench.settings.applyToAllProfiles": [],
     "editor.fontWeight": "600",
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "workbench.panel.showLabels": false
 }
