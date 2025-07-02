@@ -11,5 +11,7 @@
     "editor.fontWeight": "600",
     "redhat.telemetry.enabled": true,
     "workbench.panel.showLabels": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "workbench.sideBar.location": "right",
+    "java.validate.enable": false
 }
