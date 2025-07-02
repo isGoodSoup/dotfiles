@@ -7,6 +7,8 @@ function fish_prompt
 end
 
 export EDITOR='nvim'
+export JAVA_HOME="/usr/lib/jvm/java-24-openjdk/"
+export PATH="$JAVA_HOME/bin:$PATH"
 source ~/dotfiles/fish/.config/fish/fish_alias.fish
 
 if status is-interactive
