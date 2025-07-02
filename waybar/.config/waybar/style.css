@@ -117,8 +117,8 @@ button:hover {
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 12 0 12;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #workspaces {
@@ -173,12 +173,12 @@ button:hover {
 
 #custom-firefox {
     background-color: @base;
-    border-radius: 32px;
+    border-radius: 0 0 32 32;
     /* border: 2px solid @blue; */
     color: @text;
     padding: 0 10 0 10;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #custom-firefox:hover {
@@ -188,12 +188,12 @@ button:hover {
 
 #custom-terminal {
     background-color: transparent;
-    border-radius: 32px;
+    border-radius: 0 0 32 32;
     /* border: 2px solid @blue; */
     color: @text;
-    padding: 0 10 0 10;
-    margin-left: 4px;
-    margin-right: 4px;
+    padding: 0 0 0 0;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #custom-terminal:hover {
