@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Catppuccin Mocha",
     "jdk.jdkhome": "/home/diego/Documents/OpenJDK-24",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.fontFamily": "JetBrainsMono",
     "editor.fontLigatures": true,
     "editor.wordWrap": "wordWrapColumn",
