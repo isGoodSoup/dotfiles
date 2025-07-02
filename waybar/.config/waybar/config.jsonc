@@ -13,7 +13,7 @@
 	"custom/logo",
 	"custom/terminal",
 	//"memory",
-	//"custom/firefox",
+	"custom/firefox",
 	"custom/cava",
 	"hyprland/window"
 	//"disk"
