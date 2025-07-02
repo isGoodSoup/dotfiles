@@ -59,7 +59,7 @@
 	"on-click-right": "exec pkill firefox",
 },
 "custom/terminal": {
-	"format": "   "
+	"format": "   ",
 	"tooltip-format": "Open your terminal",
 	"on-click": "exec kitty",
 	"on-click-right": "exec pkill kitty",
