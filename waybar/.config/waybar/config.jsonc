@@ -11,6 +11,7 @@
 //"width": 1500,
 "modules-left": [
 	"custom/logo",
+	"custom/terminal",
 	//"memory",
 	//"custom/firefox",
 	"custom/cava",
@@ -57,6 +58,12 @@
 	"on-click": "exec firefox & disown",
 	"on-click-right": "exec pkill firefox",
 },
+"custom/terminal": {
+	"format": "   "
+	"tooltip-format": "Open your terminal",
+	"on-click": "exec kitty",
+	"on-click-right": "exec pkill kitty",
+}
 "custom/swaync": {
 	"format": " ",
 	"tooltip-format": "Notification Center (swaync)",
