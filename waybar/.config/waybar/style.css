@@ -124,7 +124,7 @@ button:hover {
 #workspaces {
     background-color: transparent;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 3px solid @mauve */;
     color: @text;
     padding: 0 12 0 12;
     margin-left: 4px;
@@ -144,10 +144,10 @@ button:hover {
 #clock {
     background-color: transparent;
     border-radius: 32 0 0 32;
-    /* border: 2px solid @blue; */
+    /* border: 3px solid @mauve */;
     color: @text;
     padding: 0 10 0 10;
-    margin-left: 0px;
+    margin-left: 4px;
     margin-right: 0px;
 }
 
@@ -159,7 +159,7 @@ button:hover {
 #custom-logo {
     background-color: transparent;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    border: 3px solid @mauve;
     color: @mauve;
     padding: 0 5 0 5;
     margin-left: 0px;
@@ -176,9 +176,9 @@ button:hover {
     border-radius: 0 0 32 32;
     /* border: 2px solid @blue; */
     color: @text;
-    padding: 0 5 0 0;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 0 5 0 5;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #custom-firefox:hover {
@@ -191,9 +191,9 @@ button:hover {
     border-radius: 0 0 32 32;
     /* border: 2px solid @blue; */
     color: @text;
-    padding: 0 0 0 0;
-    margin-left: 2px;
-    margin-right: 2px;
+    padding: 0 5 0 5;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #custom-terminal:hover {
@@ -204,11 +204,11 @@ button:hover {
 #battery {
     background-color: transparent;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 3px solid @mauve */;
     color: @mauve;
     padding: 0 10 0 10;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #battery:hover {
@@ -320,11 +320,11 @@ label:focus {
 #pulseaudio {
     background-color: transparent;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 3px solid @mauve */;
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
-    margin-right: 0px;
+    margin-right: 4px;
 }
 
 #pulseaudio.muted {
@@ -446,7 +446,7 @@ label:focus {
 #custom-swaync {
     background-color: transparent;
     border-radius: 0 32 32 0;
-    /* border: 2px solid @blue; */
+    /* border: 3px solid @mauve */;
     color: @text;
     padding: 0 10 0 10;
     margin-left: 0px;

@@ -11,7 +11,7 @@
 //"width": 1500,
 "modules-left": [
 	"custom/logo",
-	"custom/terminal",
+	//"custom/terminal",
 	//"memory",
 	//"custom/firefox",
 	"custom/cava",
