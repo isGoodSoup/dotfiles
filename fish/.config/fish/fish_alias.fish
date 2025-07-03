@@ -2,8 +2,10 @@ alias fishes="nvim ~/dotfiles/fish/.config/fish/fish_alias.fish"
 alias fishconf="nvim ~/dotfiles/fish/.config/fish/config.fish"
 
 export DOTS='~/dotfiles/'
+export ALXD='~/alxandria/'
 export PYTH='~/dotfiles/scripts/lang/python'
 
+alias alx="y $ALXD"
 alias aur="yay -Qq | grep"
 alias btop="bashtop"
 alias cl="clear"
