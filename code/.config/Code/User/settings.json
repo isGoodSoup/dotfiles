@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "jdk.jdkhome": "/home/diego/Documents/OpenJDK-24",
     "editor.fontSize": 16,
     "editor.fontFamily": "JetBrainsMono",
@@ -13,5 +13,6 @@
     "workbench.panel.showLabels": false,
     "editor.minimap.enabled": false,
     "workbench.sideBar.location": "right",
-    "java.validate.enable": false
+    "java.validate.enable": false,
+    "git.openRepositoryInParentFolders": "always"
 }
