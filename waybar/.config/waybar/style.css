@@ -114,7 +114,7 @@ button:hover {
 #window {
     background-color: transparent;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 12 0 12;
     margin-left: 0px;
@@ -174,7 +174,7 @@ button:hover {
 #custom-firefox {
     background-color: @base;
     border-radius: 0 0 32 32;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 5 0 5;
     margin-left: 4px;
@@ -189,7 +189,7 @@ button:hover {
 #custom-terminal {
     background-color: transparent;
     border-radius: 0 0 32 32;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 5 0 5;
     margin-left: 4px;
@@ -266,7 +266,7 @@ label:focus {
 #cpu {
     background-color: @base;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -276,7 +276,7 @@ label:focus {
 #memory {
     background-color: @base;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -286,7 +286,7 @@ label:focus {
 #disk {
     background-color: @base;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -300,7 +300,7 @@ label:focus {
 #network {
     background-color: @base;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -328,7 +328,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @red;
 }
 
@@ -377,7 +377,7 @@ label:focus {
     min-width: 30px;
     background-color: transparent;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -389,8 +389,8 @@ label:focus {
     border-radius: 32px;
     color: @text;
     padding: 0 10 0 10;
-    /*border-top: 0.5px solid @blue;
-    border-bottom: 2px solid @blue;*/
+    /*border-top: 0.5px solid @mauve;
+    border-bottom: 2px solid @mauve;*/
 }
 
 #tray > .passive {
@@ -432,7 +432,7 @@ label:focus {
     background-color: @base;
     border-radius: 32px;
     /* border: 2px solid @green; */
-    color: @blue;
+    color: @mauve;
     padding-bottom: 6px;
     font-family: "bargraph";
     font-size: 22px;
@@ -461,7 +461,7 @@ label:focus {
 #custom-power {
     background-color: transparent;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;
@@ -477,17 +477,17 @@ label:focus {
 #language {
     background-color: @base;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
-    color: @text;
-    padding: 0 10 0 10;
-    margin-left: 4px;
-    margin-right: 4px;
+    /* border: 2px solid @mauve; */
+    color: @mauve;
+    padding: 0 0 0 0;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #keyboard-state {
     background-color: @base;
     border-radius: 32px;
-    /* border: 2px solid @blue; */
+    /* border: 2px solid @mauve; */
     color: @text;
     padding: 0 10 0 10;
     margin-left: 4px;

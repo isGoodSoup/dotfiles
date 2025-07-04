@@ -24,8 +24,8 @@
 ],
 "modules-right": [
 	"battery",
-	//"hyprland/language",
 	"tray",
+	"hyprland/language",
 	//"custom/cava",
 	//"disk",
 	"pulseaudio",
@@ -99,8 +99,8 @@
         },
 	"sort-by-number": true,
 	"persistent-workspaces": {
-		"*": 9,
-		"DP-1": 9
+		"*": 5,
+		"DP-1": 5
 	}
 },
 "battery": {
@@ -159,7 +159,7 @@
 },
 
 "hyprland/language": {
-	"format": "<span color='#f9e2af'>󰌌</span> <span color='#cdd6f4'>{}</span>",
+	"format": " {short}",
 	"format-ar": "ara",
 	"format-en": "eng",
 

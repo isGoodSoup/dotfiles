@@ -87,7 +87,7 @@ element-icon {
 element selected.normal {
     background-color: @mauve;
     border-radius: 20px;
-    text-color: @bg-col;
+    text-color: @bg-col-light;
 }
 
 mode-switcher {

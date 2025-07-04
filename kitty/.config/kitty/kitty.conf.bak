@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_THEME
-# Catppuccin-Mocha
+# Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -24,7 +24,7 @@ include current-theme.conf
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-font_size 12.0
+font_size 14.0
 
 #: Font size (in pts).
 
@@ -303,7 +303,7 @@ cursor_shape block
 #: the cursor shape to beam at shell prompts. You can avoid this by
 #: setting shell_integration to no-cursor.
 
-# cursor_shape_unfocused hollow
+cursor_shape_unfocused hollow
 
 #: Defines the text cursor shape when the OS window is not focused.
 #: The unfocused cursor shape can be one of block, beam, underline,
@@ -313,11 +313,11 @@ cursor_beam_thickness 1.5
 
 #: The thickness of the beam cursor (in pts).
 
-# cursor_underline_thickness 2.0
+cursor_underline_thickness 2.0
 
 #: The thickness of the underline cursor (in pts).
 
-# cursor_blink_interval -1
+cursor_blink_interval -1
 
 #: The interval to blink the cursor (in seconds). Set to zero to
 #: disable blinking. Negative values mean use system default. Note
@@ -952,7 +952,7 @@ initial_window_height 475
 #: set the vertical and horizontal sides. Three values set top,
 #: horizontal and bottom. Four values set top, right, bottom and left.
 
-window_padding_width 12
+window_padding_width 24
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border). A single value sets all four sides. Two values set
@@ -977,8 +977,7 @@ window_padding_width 12
 #: only at the bottom and right edges. The value can be one of: top-
 #: left, top, top-right, left, center, right, bottom-left, bottom,
 #: bottom-right.
-
-active_border_color #00ff00
+# active_border_color #00ff00
 
 #: The color for the border of the active window. Set this to none to
 #: not draw borders around the active window.
@@ -1302,7 +1301,7 @@ background_opacity 1
 #: will only work if dynamic_background_opacity was enabled in the
 #: original config.
 
-# background_blur 1
+background_blur 16
 
 #: Set to a positive value to enable background blur (blurring of the
 #: visuals behind a transparent window) on platforms that support it.
@@ -1357,7 +1356,7 @@ background_opacity 1
 #: decrease_background_opacity) or the remote control facility.
 #: Changing this option by reloading the config is not supported.
 
-# background_tint 0.0
+background_tint 0.8
 
 #: How much to tint the background image by the background color. This
 #: option makes it easier to read the text. Tinting is done using the
@@ -1696,7 +1695,7 @@ background_opacity 1
 #: remote machine to read/write to the local filesystem, without
 #: permission.
 
-# allow_hyperlinks yes
+allow_hyperlinks yes
 
 #: Process hyperlink escape sequences (OSC 8). If disabled OSC 8
 #: escape sequences are ignored. Otherwise they become clickable
@@ -1705,7 +1704,7 @@ background_opacity 1
 #: special value of ask means that kitty will ask before opening the
 #: link when clicked.
 
-# shell_integration enabled
+shell_integration enabled no-cursor
 
 #: Enable shell integration on supported shells. This enables features
 #: such as jumping to previous prompts, browsing the output of the
