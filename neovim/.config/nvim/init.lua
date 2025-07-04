@@ -785,40 +785,67 @@ require('lazy').setup({
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'ellisonleao/gruvbox.nvim',
-    name = 'gruvbox',
+    'catppuccin/nvim',
+    name = 'catppuccin',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     config = true,
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       -- Default options:
-      require('gruvbox').setup {
-        terminal_colors = true, -- add neovim terminal colors
-        undercurl = true,
-        underline = true,
-        bold = true,
-        italic = {
-          strings = true,
-          emphasis = true,
-          comments = true,
-          operators = false,
-          folds = true,
-        },
-        strikethrough = true,
-        invert_selection = false,
-        invert_signs = false,
-        invert_tabline = false,
-        inverse = true, -- invert background for search, diffs, statuslines and errors
-        contrast = '', -- can be "hard", "soft" or empty string
-        palette_overrides = {},
-        overrides = {},
-        dim_inactive = false,
-        transparent_mode = false,
-      }
+        require("catppuccin").setup({
+              flavour = "auto",
+              background = {
+                  light = "latte",
+                  dark = "mocha",
+              },
+              transparent_background = false,
+              show_end_of_buffer = false, 
+              term_colors = false, 
+              dim_inactive = {
+                  enabled = false, 
+                  shade = "dark",
+                  percentage = 0.15,
+              },
+              no_italic = false,
+              no_bold = false,
+              no_underline = false,
+              styles = {
+                  comments = { "italic" },
+                  conditionals = { "italic" },
+                  loops = {},
+                  functions = {},
+                  keywords = {},
+                  strings = {},
+                  variables = {},
+                  numbers = {},
+                  booleans = {},
+                  properties = {},
+                  types = {},
+                  operators = {},
+                  -- miscs = {},
+              },
+              color_overrides = {},
+              custom_highlights = {},
+              default_integrations = true,
+              integrations = {
+                  cmp = true,
+                  gitsigns = true,
+                  nvimtree = true,
+                  treesitter = true,
+                  notify = false,
+                  mini = {
+                      enabled = true,
+                      indentscope_color = "",
+                  },
+              },
+        })
+
+  -- setup must be called before loading
+  vim.cmd.colorscheme "catppuccin"
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.o.background = 'dark', vim.cmd [[colorscheme gruvbox]]
+      vim.cmd [[colorscheme catppuccin-mocha]]
     end,
   },
 
