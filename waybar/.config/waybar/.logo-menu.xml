@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<object class="GtkMenu" id"menu">
+		<child>
+	  		<object class="GtkMenuItem" id="rofi">
+				<property name="label">Run Rofi</property>
+			</object>
+		</child>
+		<child> 
+			<object> 
+				<property name="label">Lock Session</property>
+			</object>
+		</child>
+	</object>
+</interface>

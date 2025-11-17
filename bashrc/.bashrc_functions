@@ -1,0 +1,92 @@
+#
+# ~/.bashrc_functions.bash
+#
+#
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+function hfind() {
+	history | grep -v "hfind" | grep "$1" | awk '!seen[substr($0, index($0,$2))]++'
+}
+
+function lsb() {
+	lsblk -Ax name -o NAME,MAJ:MIN,ROTA,SIZE,TYPE,FSTYPE,MOUNTPOINTS
+}
+
+function mkcd() {
+	mkdir $1
+	cd $1
+}
+
+function cdls() {
+	cd $1
+	ls -lAhtr
+}
+
+function p() {
+	cd $HOME/dotfiles/scripts/python/ || return 1
+	if [[ ! -f $1 ]]; then
+		echo "#!/usr/bin/python" > $1
+		if [[ $2 == 0 ]]; then
+			:
+		else
+			nvim $1
+		fi
+		echo "  Python script was created."
+	else
+		if [[ $2 == '-e' || $2 == '--edit' ]]; then
+			nvim $1
+		else
+			python "$1"
+		fi
+	fi
+	cd $HOME
+}
+
+function bashf() {
+	cd $HOME/dotfiles/
+	nvim bashrc/.bashrc_functions
+	cd $HOME
+}
+
+function bstamp() {
+	echo "[$(date +"%Y-%m-%d")] $(date +"%H:%M")" >> $HOME/dotfiles/bashrc/.bedtime.txt
+	echo "Bedtime recorded: $(date +"%H:%M")"
+}
+
+function dot() {
+	nvim $HOME/dotfiles/$1
+}
+
+function fox() {
+    if [[ -n "$1" && ! -f "$1" ]]; then
+	url=$1
+	http='https://'
+        (nohup firefox "$http$1" >/dev/null 2>&1 & disown)
+    else
+        (nohup firefox >/dev/null 2>&1 & disown)
+    fi
+}
+
+function tm() {
+	echo "Current Time => $(date +"%H:%M")"
+}
+
+function new-alias() {
+	cd $HOME/dotfiles/bashrc/
+	echo "alias $1='$2'" >> .bashrc_aliases
+	sort -o .bashrc_aliases .bashrc_aliases
+	cd $HOME
+}
+
+function q() {
+	exit
+}
+

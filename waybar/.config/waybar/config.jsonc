@@ -1,0 +1,204 @@
+{ 
+"position": "bottom",
+"exlusive": "true",
+"passthrough": "true",
+"gtk-layer-shell": "true",
+//"margin-top": 10,
+"margin-bottom": 10,
+"margin-left": 10,
+"margin-right": 10,
+"height": 40,
+//"width": 1500,
+"modules-left": [
+	"custom/logo",
+	//"custom/terminal",
+	//"memory",
+	//"custom/firefox",
+	"custom/cava",
+	"hyprland/window"
+	//"disk"
+	//"cpu"
+],
+"modules-center": [
+	"hyprland/workspaces"
+],
+"modules-right": [
+	"battery",
+	"tray",
+	"hyprland/language",
+	//"custom/cava",
+	//"disk",
+	"pulseaudio",
+	"custom/separator",
+	"clock",
+	//"custom/power",
+	"custom/swaync",
+],
+"tray": {
+	"icon-size": 16,
+	"icon-theme": "Adwaita",
+	"spacing": 2, 
+},
+"custom/spacer": {
+        "format": " ", // Empty space
+        "tooltip": false,
+},
+"custom/separator": {
+	"format": " | ",
+},
+"custom/logo": {
+	"format": "  ",
+	"tooltip-format": "v0.49.0",
+	//"on-click": "exec hyprlock",
+	"on-click": "exec ~/dotfiles/rofi/.config/rofi/powermenu/type-2/powermenu.sh",
+	"on-click-right": "exec kitty"
+},
+"custom/firefox": {
+	"format": "  ",
+	"tooltip-format": "Open Firefox",
+	"on-click": "exec firefox & disown",
+	"on-click-right": "exec pkill firefox",
+},
+"custom/terminal": {
+	"format": "   ",
+	"tooltip-format": "Open your terminal",
+	"on-click": "exec kitty",
+	"on-click-right": "exec pkill kitty",
+},
+"custom/swaync": {
+	"format": " ",
+	"tooltip-format": "Notification Center (swaync)",
+	"on-click": "exec swaync-client -t",
+},
+"hyprland/window": {
+	"format": "{}",
+	"max-length": 32,
+	"rewrite": {
+	"": "~"
+},
+	"separate-outputs": true
+},
+"hyprland/workspaces": {
+	"format": "{icon}",
+	"on-click": "activate",
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+		"5": "",
+		"6": "",
+		"7": "",
+		"8": "",
+		"9": "",
+		"active": "",
+		"urgent": "",
+		"persistent": "",
+		"focused": "",
+		"default": "",
+
+        },
+	"sort-by-number": true,
+	"persistent-workspaces": {
+		"*": 5,
+		"DP-1": 5
+	}
+},
+"battery": {
+	"states": {
+            	"warning": 30,
+        	"critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-full": "  {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "]
+},
+"clock": {
+	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
+	"format": "{:%H:%M  %a %d %b}",
+	"format-alt": "{:%Y-%m-%d}"
+},
+
+"cpu": {
+	"format": " 󰍛 {usage}% ",
+	"interval": 1,
+	"format-alt-click": "click",
+	"format-alt": "<span color='#00FF00'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#FFFFFF'>{usage:>2}%</span> <span color='#00FF00'> 󰍛 </span>",
+	"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+	"on-click": "gnome-system-monitor"
+},
+"memory": {
+	"interval": 3,
+	"format": "   {used:0.1f}"
+},
+   
+
+"custom/weather": {
+	"exec": "~/.config/hypr/scripts/weather.sh",
+	"return-type": "json",
+	"interval": 600,
+	"format": "{text}"
+},
+
+"pulseaudio": {
+	"format": "{volume}%",
+	"format-bluetooth": "{icon}{volume}%",
+	"tooltip": false,
+	"format-muted": "muted",
+	"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+},
+"pulseaudio#microphone": {
+	"format": "{format_source}",
+	"format-source": "<span color='#f38ba8'> </span><span color='#cdd6f4'>{volume}%</span>",
+	"format-source-muted": "",
+	"on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
+	"on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
+	"on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 5%-",
+},
+
+"hyprland/language": {
+	"format": " {short}",
+	"format-ar": "ara",
+	"format-en": "eng",
+
+},
+"custom/cava": {
+        "cava_config": "~/dotfiles/cava/.config/cava/config",
+        "framerate": 30,
+        "autosens": 1,
+        "sensitivity": 100,
+        "bars": 14,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "hide_on_silence": false,
+        // "format_silent": "quiet",
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+},
+"custom/power": {
+	"format": " ⏻ ",
+	"on-click": "exec poweroff",
+	"on-click-right": "exec reboot",
+	"tooltip-format": "Power off the PC"
+},
+"disk":{
+	"interval": 3,
+	"path": "/home",
+	"format": " {free}",
+	"unit": "GB"
+},
+}

@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "jdk.jdkhome": "/home/diego/Documents/OpenJDK-24",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "JetBrainsMono",
+    "editor.fontLigatures": false,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.wordSegmenterLocales": null,
+    "workbench.settings.applyToAllProfiles": [],
+    "editor.fontWeight": "600",
+    "redhat.telemetry.enabled": true,
+    "workbench.panel.showLabels": false,
+    "editor.minimap.enabled": false,
+    "workbench.sideBar.location": "right",
+    "java.validate.enable": false,
+    "git.openRepositoryInParentFolders": "always"
+}

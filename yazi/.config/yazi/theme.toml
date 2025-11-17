@@ -1,0 +1,10 @@
+[flavor]
+use = "tokyo-night"
+dark = "tokyo-night"
+
+[icon]
+globs = []
+dirs  = []
+files = []
+exts  = []
+conds = []

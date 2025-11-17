@@ -1,0 +1,17 @@
+configuration{
+	modi: "drun,calc";
+	//icon-theme: "Papirus";
+	show-icons: false;
+	terminal: "kitty";
+	drun-display-format: "{icon} {name}";
+	location: 0;
+	disable-history: false;
+	hide-scrollbar: false;
+	display-drun: " run ";
+	display-calc: " calc ";
+	//display-drun: "";
+	sidebar-mode: false;
+}
+
+@theme "catppuccin-mocha"
+

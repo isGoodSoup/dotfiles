@@ -1,0 +1,541 @@
+@import "./mocha.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMono, Arial, Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: @base;
+    border-radius: 32px;
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: @base;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    /*box-shadow: inset 0 -3px #ffffff;*/
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    color: @mauve;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    background-color: transparent;
+    color: @text;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: @mauve;
+}
+
+#workspaces button.focused {
+    background-color: transparent;
+    /* box-shadow: inset 0 -3px #ffffff; */
+}
+
+#workspaces button.urgent {
+    background-color: transparent;
+    color: @peach;
+}
+
+#workspaces button.active {
+    color: @mauve;
+}
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#custom-logo,
+#custom-firefox,
+#custom-terminal,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#custom-cava,
+#custom-swaync,
+#custom-power,
+#separator,
+#mpd {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#window {
+    background-color: transparent;
+    border-radius: 32px;
+    /* border: 2px solid @mauve; */
+    color: @text;
+    padding: 0 12 0 12;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#workspaces {
+    background-color: transparent;
+    border-radius: 32px;
+    /* border: 3px solid @mauve */;
+    color: @text;
+    padding: 0 12 0 12;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: transparent;
+    border-radius: 32 0 0 32;
+    /* border: 3px solid @mauve */;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#clock:hover {
+    background-color: @mauve;
+    color: @base;
+}
+
+#custom-logo {
+    background-color: transparent;
+    border-radius: 32px;
+    /*border: 3px solid @mauve*/;
+    color: @mauve;
+    padding: 0 10 0 10;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#custom-logo:hover {
+    background-color: @mauve;
+    color: @base;
+}
+
+#custom-firefox {
+    background-color: @base;
+    border-radius: 0 0 32 32;
+    /* border: 2px solid @mauve; */
+    color: @text;
+    padding: 0 5 0 5;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#custom-firefox:hover {
+    background-color: @mauve;
+    color: @base;
+}
+
+#custom-terminal {
+    background-color: transparent;
+    border-radius: 0 0 32 32;
+    /* border: 2px solid @mauve; */
+    color: @text;
+    padding: 0 5 0 5;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#custom-terminal:hover {
+    background-color: @mauve;
+    color: @base;
+}
+
+#battery {
+    background-color: transparent;
+    border-radius: 32px;
+    /* border: 3px solid @mauve */;
+    color: @mauve;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#battery:hover {
+    background-color: @mauve;
+    color: @base;
+}
+
+
+#battery.charging, #battery.plugged {
+    background-color: transparent;
+    color: @mauve;
+}
+
+@keyframes blink {
+    to {
+        background-color: @text;
+        color: #000000;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    background-color: transparent;
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#power-profiles-daemon {
+    padding-right: 15px;
+}
+
+#power-profiles-daemon.performance {
+    background-color: #f53c3c;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.balanced {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.power-saver {
+    background-color: #2ecc71;
+    color: #000000;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @mauve; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#memory {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @mauve; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#disk {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @mauve; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#backlight {
+    background-color: #90b1b1;
+}
+
+#network {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @mauve; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#network.disconnected {
+    background-color: @red;
+    border-radius: 32px;
+    /* border: 2px solid @text; */
+    color: @base;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#pulseaudio {
+    background-color: transparent;
+    border-radius: 32px;
+    /* border: 3px solid @mauve */;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 0px;
+}
+
+#pulseaudio.muted {
+    /* border: 2px solid @mauve; */
+    color: @red;
+}
+
+#wireplumber {
+    background-color: #fff0f5;
+    color: #000000;
+}
+
+#wireplumber.muted {
+    background-color: #f53c3c;
+}
+
+#custom-media {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @green; */
+    color: @green;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#custom-media.custom-spotify {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @green; */
+    color: @green;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    background-color: #f0932b;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray {
+    min-width: 30px;
+    background-color: transparent;
+    border-radius: 32px;
+    /* border: 2px solid @mauve; */
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#tray > .active {
+    background-color: @base;
+    border-radius: 32px;
+    color: @text;
+    padding: 0 10 0 10;
+    /*border-top: 0.5px solid @mauve;
+    border-bottom: 2px solid @mauve;*/
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+
+#custom-cava {
+    background-color: @base;
+    border-radius: 32px;
+    /* border: 2px solid @green; */
+    color: @mauve;
+    padding-bottom: 6px;
+    font-family: "bargraph";
+    font-size: 22px;
+}
+
+#custom-cava.updated {
+    background-color: @base;
+    color: @text;
+}
+
+#custom-swaync {
+    background-color: transparent;
+    border-radius: 0 32 32 0;
+    /* border: 3px solid @mauve */;
+    color: @text;
+    padding: 0 10 0 10;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#custom-swaync:hover {
+   background-color: @mauve;
+   color: @base;
+}
+
+#custom-power {
+	background-color: transparent;
+	border-radius: 32px;
+	/* border: 2px solid @mauve; */
+	color: @text;
+	padding: 0 10 0 10;
+	margin-left: 4px;
+	margin-right: 4px;
+
+}
+
+#custom-power:hover {
+	background-color: @red;
+	color: @base;
+}
+
+#language {
+	background-color: @base;
+	border-radius: 32px;
+	/* border: 2px solid @mauve; */
+	color: @mauve;
+	padding: 0 0 0 0;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#keyboard-state {
+	background-color: @base;
+	border-radius: 32px;
+	/* border: 2px solid @mauve; */
+	color: @text;
+	padding: 0 10 0 10;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+#keyboard-state > label {
+	padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+}
+
+#separator {
+	background-color: transparent;
+	color: @text;
+    padding: 0 10 0 10;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#privacy {
+	padding: 0;
+}
+
+#privacy-item {
+	padding: 0 5px;
+	color: white;
+}
+
+#privacy-item.screenshare {
+	background-color: #cf5700;
+}
+
+#privacy-item.audio-in {
+	background-color: #1ca000;
+}
+
+#privacy-item.audio-out {
+	background-color: #0069d4;
+}
