@@ -4,6 +4,7 @@
 alias aur="yay -Qq | grep"
 alias btop="bashtop"
 alias hc='history -c'
+alias calc="java -jar ../JCalculator.jar $@"
 alias cl="clear"
 alias clip="xclip -sel c <"
 alias codeconf="nvim ~/dotfiles/code/.config/Code/User/settings.json"
