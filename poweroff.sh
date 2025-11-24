@@ -7,4 +7,5 @@ for ((i = $COUNTDOWN_MAX; i >= 0; i--)); do
   sleep 1
 done
 echo Powering off systems
-sleep 1
+sleep 2
+poweroff
