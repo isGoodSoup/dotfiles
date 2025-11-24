@@ -1,16 +1,10 @@
 #!/usr/bin/env bash
-echo Shutting down in 5 seconds...
-sleep 1
-echo 5...
-sleep 1
-echo 4...
-sleep 1
-echo 3...
-sleep 1
-echo 2...
-sleep 1
-echo 1...
-sleep 1
+COUNTDOWN_MAX=6
+
+echo "Shutting down in $COUNTDOWN_MAX seconds..."
+for ((i = $COUNTDOWN_MAX; i >= 0; i--)); do
+  echo -ne "$i\r"
+  sleep 1
+done
 echo Powering off systems
 sleep 1
-poweroff
