@@ -6,6 +6,6 @@ for ((i = $COUNTDOWN_MAX; i >= 0; i--)); do
   echo -ne "$i\r"
   sleep 1
 done
-echo Powering off systems
+echo -e "\e[32mPowering off systems"
 sleep 2
 poweroff
