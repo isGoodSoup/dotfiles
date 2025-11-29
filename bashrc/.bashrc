@@ -1,7 +1,7 @@
 export ACCENT="\e[38;5;135m"
 export ACCENT_2="\e[38;5;27m"
 
-export PS1="\[$ACCENT\]\u\[\e[0m\] at \[$ACCENT\]\h\[\e[0m\] in $ACCENT_2\W\n\[$ACCENT\]\$\[\e[0m\] "
+export PS1="\[$ACCENT\]\$\[\e[0m\] "
 export JAVA_HOME=/opt/jdk-21
 export PATH=$PATH:$JAVA_HOME/bin
 export EDITOR="nvim"
