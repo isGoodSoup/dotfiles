@@ -1,7 +1,8 @@
-export ACCENT="\e[38;5;135m"
-export ACCENT_2="\e[38;5;27m"
+export MAUVE="\e[38;5;135m"
+export GREEN="\e[38;5;48m"
+export BLUE="\e[38;5;27m"
 
-export PS1="\[$ACCENT\]$USER@$HOSTNAME \[$ACCENT_2\]\W \[$ACCENT\]\$\[\e[0m\] "
+export PS1="\[$GREEN\][\[\e[0m\]\t\[$GREEN\]] $USER@$HOSTNAME \[$BLUE\]\W \n\[$GREEN\]\$\[\e[0m\] "
 export JAVA_HOME=/opt/jdk-21
 export PATH=$PATH:$JAVA_HOME/bin
 export EDITOR="nvim"
@@ -15,8 +16,8 @@ export PATH="$PATH:/usr/games"
 source .bashrc_functions
 source .bashrc_aliases
 clear
+#nitch
 pokemon-colorscripts --random --no-title
-#echo "Welcome back, $USER!"
 source "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
