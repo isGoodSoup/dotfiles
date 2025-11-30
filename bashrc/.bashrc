@@ -1,7 +1,7 @@
 export ACCENT="\e[38;5;135m"
 export ACCENT_2="\e[38;5;27m"
 
-export PS1="\[$ACCENT\]\$\[\e[0m\] "
+export PS1="\[$ACCENT\]$USER@$HOSTNAME \[$ACCENT_2\]\W \[$ACCENT\]\$\[\e[0m\] "
 export JAVA_HOME=/opt/jdk-21
 export PATH=$PATH:$JAVA_HOME/bin
 export EDITOR="nvim"
@@ -16,7 +16,7 @@ source .bashrc_functions
 source .bashrc_aliases
 clear
 pokemon-colorscripts --random --no-title
-#echo -e "${ACCENT}$USER at $HOSTNAME\e[0m"
+#echo "Welcome back, $USER!"
 source "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
